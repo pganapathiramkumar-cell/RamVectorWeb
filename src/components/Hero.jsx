@@ -1,12 +1,6 @@
 import { ArrowRight, Mail, Cpu } from 'lucide-react';
 import styles from '../styles/Hero.module.css';
 
-const stats = [
-  { value: '14+',   label: 'Years Enterprise Architecture' },
-  { value: '1000+', label: 'Enterprise Users Impacted' },
-  { value: '60%',   label: 'Delivery Acceleration (GenAI)' },
-  { value: '5+',    label: 'Azure Expert Certifications' },
-];
 
 export default function Hero() {
   return (
@@ -51,14 +45,6 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className={styles.stats}>
-              {stats.map(s => (
-                <div key={s.label} className={styles.statItem}>
-                  <span className={styles.statValue}>{s.value}</span>
-                  <span className={styles.statLabel}>{s.label}</span>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* ── Right: Profile photo ── */}
