@@ -1,4 +1,4 @@
-import { Smartphone, ExternalLink, Github, Building2, Brain, Cloud, Zap, HeartPulse } from 'lucide-react';
+import { Smartphone, ExternalLink, Github, Zap, HeartPulse } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from '../styles/Projects.module.css';
 
@@ -58,38 +58,6 @@ const projects = [
       { label: 'Zenodo Publication', href: 'https://zenodo.org/records/19560252', primary: true, icon: 'ext' },
       { label: 'ORCID Profile',      href: 'https://orcid.org/0009-0006-9439-5067', primary: false, icon: 'ext' },
     ],
-    featured: false,
-  },
-  {
-    icon: Brain,
-    iconBg: 'rgba(139,92,246,0.15)',
-    iconColor: '#8b5cf6',
-    badges: [{ label: 'Case Study', cls: styles.badgeCase }, { label: 'Enterprise', cls: styles.badgeEnterprise }],
-    title: 'GenAI Migration Platform — WinForms to React',
-    desc: 'Designed custom AI migration toolchain with Claude (AWS Bedrock) and GPT-4: spec generation → component mapping → React code output → quality validation pipeline. Delivered greenfield architecture achieving 60% acceleration in enterprise UI delivery across 1,000+ users at Belfast client.',
-    impact: [
-      { value: '60%',   label: 'Delivery Acceleration' },
-      { value: '1000+', label: 'Enterprise Users' },
-      { value: 'Spec',  label: 'Driven Delivery' },
-    ],
-    stack: ['Claude (AWS Bedrock)', 'GPT-4', 'LangChain', 'Azure OpenAI', 'React', '.NET Core 8', 'Azure DevOps'],
-    links: [],
-    featured: false,
-  },
-  {
-    icon: Cloud,
-    iconBg: 'rgba(6,182,212,0.15)',
-    iconColor: '#06b6d4',
-    badges: [{ label: 'Case Study', cls: styles.badgeCase }, { label: 'Enterprise', cls: styles.badgeEnterprise }],
-    title: 'Enterprise AI Governance Platform — UK Financial Services',
-    desc: 'Established AI governance framework covering responsible-AI controls, model access policies, and audit logging — enabling compliant Azure OpenAI Service and AWS Bedrock deployment. Designed end-to-end RAG architecture for enterprise knowledge extraction with hallucination-mitigation layer using pgvector and LangChain.',
-    impact: [
-      { value: 'TOGAF', label: 'Aligned Governance' },
-      { value: 'RAG',   label: 'Architecture Pattern' },
-      { value: 'Zero',  label: 'Trust Security' },
-    ],
-    stack: ['Azure OpenAI', 'AWS Bedrock', 'pgvector', 'LangChain', 'Azure Key Vault', 'IAM', 'Zero Trust', 'TOGAF'],
-    links: [],
     featured: false,
   },
 ];
