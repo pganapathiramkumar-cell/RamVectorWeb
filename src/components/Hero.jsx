@@ -2,10 +2,10 @@ import { ArrowRight, Mail, Cpu } from 'lucide-react';
 import styles from '../styles/Hero.module.css';
 
 const stats = [
-  { value: '12+', label: 'Years Enterprise Architecture' },
-  { value: '50+', label: 'AI & Cloud Projects Delivered' },
-  { value: '5+',  label: 'GenAI Platforms Deployed' },
-  { value: '3',   label: 'Multi-Cloud Environments' },
+  { value: '14+',   label: 'Years Enterprise Architecture' },
+  { value: '1000+', label: 'Enterprise Users Impacted' },
+  { value: '60%',   label: 'Delivery Acceleration (GenAI)' },
+  { value: '5+',    label: 'Azure Expert Certifications' },
 ];
 
 export default function Hero() {
@@ -28,7 +28,7 @@ export default function Hero() {
             <h1 className={styles.name}>
               Ganapathi<br />
               Ramkumar<br />
-              <span className={styles.nameAccent}>Palanivelu</span>
+              <span className={styles.nameAccent}>Palanivel</span>
             </h1>
 
             <div className={styles.title}>
@@ -67,7 +67,7 @@ export default function Hero() {
               <div className={styles.profileRing}>
                 <img
                   src="/profile.png"
-                  alt="Ganapathi Ramkumar Palanivelu — AI Architect and Enterprise Architect, Principal Technology Leader and Creator of RamVector AI Document Intelligence App"
+                  alt="Ganapathi Ramkumar Palanivel — AI Architect, Enterprise Architect, Solution Architect, and Creator of RamVector AI Document Intelligence Platform"
                   className={styles.profileImg}
                   loading="eager"
                   width="320"

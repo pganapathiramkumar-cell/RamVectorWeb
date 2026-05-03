@@ -1,4 +1,4 @@
-import { Smartphone, ExternalLink, Github, Building2, Brain, Cloud } from 'lucide-react';
+import { Smartphone, ExternalLink, Github, Building2, Brain, Cloud, Zap } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from '../styles/Projects.module.css';
 
@@ -8,14 +8,14 @@ const projects = [
     iconBg: 'rgba(99,102,241,0.15)',
     iconColor: '#6366f1',
     badges: [{ label: 'Live on App Store', cls: styles.badgeLive }, { label: 'AI', cls: styles.badgeAI }],
-    title: 'RamVector — AI Document Intelligence',
-    desc: 'A production iOS application that transforms PDFs into structured intelligence — generating AI summaries, action items, key insights, and workflow recommendations. Built on a RAG architecture with Claude (Bedrock) as the reasoning engine, React Native frontend, and a Python/FastAPI backend.',
+    title: 'RamVector — Enterprise RAG AI Assistant Platform',
+    desc: 'Designed and deployed a full-stack RAG AI assistant — React front-end, Python FastAPI back-end — shipped as a production iOS application on the Apple App Store. Architected a 7-service microservices system (API Gateway, Steer, Skill, Auth, AI Orchestrator, Document, Notification) on PostgreSQL 16, Redis 7, and RabbitMQ 3.13.',
     impact: [
-      { value: 'Live',  label: 'App Store Listing' },
-      { value: 'RAG',   label: 'Architecture Pattern' },
-      { value: 'Multi', label: 'LLM Backend' },
+      { value: 'Live',  label: 'App Store' },
+      { value: '7',     label: 'Microservices' },
+      { value: 'Multi', label: 'LLM Support' },
     ],
-    stack: ['React Native', 'Python', 'FastAPI', 'AWS Bedrock', 'Claude', 'RAG', 'Pinecone', 'Expo'],
+    stack: ['React', 'Python', 'FastAPI', 'PostgreSQL 16', 'Redis 7', 'RabbitMQ', 'OpenAI GPT-4', 'Groq', 'Ollama', 'pgvector', 'Prometheus', 'Docker'],
     links: [
       { label: 'App Store', href: 'https://apps.apple.com/in/app/ramvector/id6763949988', primary: true },
       { label: 'GitHub',    href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb', primary: false },
@@ -23,18 +23,34 @@ const projects = [
     featured: true,
   },
   {
+    icon: Zap,
+    iconBg: 'rgba(245,158,11,0.15)',
+    iconColor: '#f59e0b',
+    badges: [{ label: 'Published', cls: styles.badgeLive }, { label: 'AI Innovation', cls: styles.badgeAI }],
+    title: 'Vision React Code Generation System',
+    desc: 'Architected a multi-modal GenAI platform converting UI images and PDF mockups into production-ready React / Angular code — reducing front-end development effort from ~2 weeks to 5–10 minutes (60–70% efficiency gain). Lowered delivery cost by ~40% through automation of manual front-end effort. Submitted for peer-reviewed publication on Zenodo and ORCID.',
+    impact: [
+      { value: '60–70%', label: 'Efficiency Gain' },
+      { value: '~40%',   label: 'Cost Reduction' },
+      { value: '5–10m',  label: 'Dev Time (was 2wks)' },
+    ],
+    stack: ['Multi-modal LLM', 'Azure OpenAI', 'GPT-4V', 'React', 'Angular', 'Python', 'Zenodo', 'ORCID'],
+    links: [],
+    featured: true,
+  },
+  {
     icon: Brain,
     iconBg: 'rgba(139,92,246,0.15)',
     iconColor: '#8b5cf6',
     badges: [{ label: 'Case Study', cls: styles.badgeCase }, { label: 'Enterprise', cls: styles.badgeEnterprise }],
-    title: 'Agentic CSR Co-Pilot — Financial Services',
-    desc: 'Designed and delivered an agentic AI co-pilot for a Tier-1 financial services client, automating customer service workflows. Multi-agent orchestration with LangGraph, integrated with Salesforce CRM and core banking APIs via MCP tool-use patterns.',
+    title: 'GenAI Migration Platform — WinForms to React',
+    desc: 'Designed custom AI migration toolchain with Claude (AWS Bedrock) and GPT-4: spec generation → component mapping → React code output → quality validation pipeline. Delivered greenfield architecture achieving 60% acceleration in enterprise UI delivery across 1,000+ users at Belfast client.',
     impact: [
-      { value: '65%',  label: 'AHT Reduction' },
-      { value: '40+',  label: 'APIs Integrated' },
-      { value: '3x',   label: 'Faster Resolution' },
+      { value: '60%',   label: 'Delivery Acceleration' },
+      { value: '1000+', label: 'Enterprise Users' },
+      { value: 'Spec',  label: 'Driven Delivery' },
     ],
-    stack: ['LangGraph', 'Azure OpenAI', 'Semantic Kernel', 'Python', '.NET Core', 'Azure DevOps', 'Power Platform'],
+    stack: ['Claude (AWS Bedrock)', 'GPT-4', 'LangChain', 'Azure OpenAI', 'React', '.NET Core 8', 'Azure DevOps'],
     links: [],
     featured: false,
   },
@@ -43,30 +59,14 @@ const projects = [
     iconBg: 'rgba(6,182,212,0.15)',
     iconColor: '#06b6d4',
     badges: [{ label: 'Case Study', cls: styles.badgeCase }, { label: 'Enterprise', cls: styles.badgeEnterprise }],
-    title: 'Multi-Cloud AI Platform — Logistics & Supply Chain',
-    desc: 'Architected a greenfield AI platform for a global logistics enterprise spanning Azure and AWS. Delivered HLD/LLD, TOGAF-aligned governance artefacts, MLOps pipeline design, and a 3-year technology roadmap approved at board level.',
+    title: 'Enterprise AI Governance Platform — UK Financial Services',
+    desc: 'Established AI governance framework covering responsible-AI controls, model access policies, and audit logging — enabling compliant Azure OpenAI Service and AWS Bedrock deployment. Designed end-to-end RAG architecture for enterprise knowledge extraction with hallucination-mitigation layer using pgvector and LangChain.',
     impact: [
-      { value: '30%',  label: 'Cost Optimised' },
-      { value: '4',    label: 'Countries Deployed' },
-      { value: 'TOGAF', label: 'Governance Framework' },
+      { value: 'TOGAF', label: 'Aligned Governance' },
+      { value: 'RAG',   label: 'Architecture Pattern' },
+      { value: 'Zero',  label: 'Trust Security' },
     ],
-    stack: ['Azure', 'AWS', 'Kubernetes', 'Terraform', 'SageMaker', 'Azure AI Studio', 'GitHub Actions', 'TOGAF'],
-    links: [],
-    featured: false,
-  },
-  {
-    icon: Building2,
-    iconBg: 'rgba(245,158,11,0.15)',
-    iconColor: '#f59e0b',
-    badges: [{ label: 'Case Study', cls: styles.badgeCase }, { label: 'Enterprise', cls: styles.badgeEnterprise }],
-    title: 'GenAI Document Intelligence Platform — Healthcare',
-    desc: 'Led architecture for a document intelligence platform ingesting clinical trial reports, regulatory submissions, and medical literature. RAG pipeline with hallucination mitigation, PII redaction, and HIPAA-compliant audit logging at enterprise scale.',
-    impact: [
-      { value: '80%',  label: 'Manual Review Reduction' },
-      { value: 'HIPAA', label: 'Compliance Maintained' },
-      { value: '10M+', label: 'Pages Processed' },
-    ],
-    stack: ['Azure OpenAI', 'LlamaIndex', 'pgvector', 'FastAPI', 'Ragas', 'DeepEval', 'Azure', 'Python'],
+    stack: ['Azure OpenAI', 'AWS Bedrock', 'pgvector', 'LangChain', 'Azure Key Vault', 'IAM', 'Zero Trust', 'TOGAF'],
     links: [],
     featured: false,
   },
@@ -76,7 +76,7 @@ export default function Projects() {
   const ref = useScrollAnimation();
 
   return (
-    <section className={`section`} id="projects" ref={ref}>
+    <section className="section" id="projects" ref={ref}>
       <div className="container">
         <div className="fade-up">
           <span className="section-label">Projects & Case Studies</span>

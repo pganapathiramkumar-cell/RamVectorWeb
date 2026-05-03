@@ -87,7 +87,7 @@ export default function Competencies() {
           <span className="section-label">Core Competencies</span>
           <h2 className="section-title">Four Pillars of <span>Strategic Expertise</span></h2>
           <p className="section-sub">
-            A rare combination of deep technical depth and executive-level breadth — built over 12+ years
+            A rare combination of deep technical depth and executive-level breadth — built over 14+ years
             of enterprise architecture and AI platform delivery.
           </p>
         </div>

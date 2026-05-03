@@ -6,6 +6,7 @@ const navLinks = [
   { label: 'About',      href: '#about' },
   { label: 'Expertise',  href: '#architecture' },
   { label: 'AI Systems', href: '#ai-systems' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Projects',   href: '#projects' },
   { label: 'Contact',    href: '#contact' },
 ];
@@ -29,7 +30,7 @@ export default function Navbar() {
           <a href="#home" className={styles.logo}>
             <div className={styles.logoMark}>RV</div>
             <div className={styles.logoText}>
-              <span className={styles.logoName}>G. Ramkumar Palanivelu</span>
+              <span className={styles.logoName}>G. Ramkumar Palanivel</span>
               <span className={styles.logoRole}>AI · Enterprise Architect</span>
             </div>
           </a>

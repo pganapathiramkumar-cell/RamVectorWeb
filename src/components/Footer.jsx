@@ -9,7 +9,7 @@ export default function Footer() {
         <div className={styles.logoArea}>
           <div className={styles.logoMark}>RV</div>
           <span className={styles.logoText}>
-            <strong>Ganapathi Ramkumar Palanivelu</strong> · AI &amp; Enterprise Architect
+            <strong>Ganapathi Ramkumar Palanivel</strong> · AI &amp; Enterprise Architect
           </span>
         </div>
 
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.right}>
-          &copy; {year} Ganapathi Ramkumar Palanivelu · RamVector
+          &copy; {year} Ganapathi Ramkumar Palanivel · RamVector
         </div>
       </div>
     </footer>

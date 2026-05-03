@@ -1,4 +1,4 @@
-import { Mail, Phone, Github, ExternalLink, ArrowRight, Send } from 'lucide-react';
+import { Mail, Phone, Github, ExternalLink, Globe, ArrowRight, Send, Linkedin } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from '../styles/Contact.module.css';
 
@@ -20,9 +20,25 @@ const contactLinks = [
     href: 'tel:+917996656111',
   },
   {
-    icon: Github,
+    icon: Linkedin,
+    iconBg: 'rgba(14,165,233,0.15)',
+    iconColor: '#0ea5e9',
+    label: 'LinkedIn',
+    value: 'linkedin.com/in/palaniram',
+    href: 'https://linkedin.com/in/palaniram',
+  },
+  {
+    icon: Globe,
     iconBg: 'rgba(139,92,246,0.15)',
     iconColor: '#8b5cf6',
+    label: 'Website',
+    value: 'www.ramkumar.cloud',
+    href: 'https://www.ramkumar.cloud',
+  },
+  {
+    icon: Github,
+    iconBg: 'rgba(245,158,11,0.15)',
+    iconColor: '#f59e0b',
     label: 'GitHub',
     value: 'pganapathiramkumar-cell',
     href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb',
@@ -39,7 +55,7 @@ const contactLinks = [
 
 const roles = [
   'Chief Architect / VP of Architecture',
-  'Principal AI Architect (GenAI / LLM platforms)',
+  'Principal AI Architect (GenAI / LLM Platforms)',
   'Enterprise Architecture Lead or Director',
   'VP Engineering / Head of Architecture',
   'Strategic Advisory & Pre-Sales Architecture',
@@ -98,7 +114,8 @@ export default function Contact() {
               </h3>
               <p className={styles.ctaDesc}>
                 Available for senior individual contributor and leadership roles across AI architecture,
-                enterprise architecture, and cloud platform engineering.
+                enterprise architecture, and cloud platform engineering. Azure Solutions Architect Expert
+                (AZ-305) · Anthropic Certified · TOGAF Aligned.
               </p>
 
               <div className={styles.ctaRoles}>
@@ -115,12 +132,12 @@ export default function Contact() {
                   <Send size={15} /> Send an Email
                 </a>
                 <a
-                  href="https://github.com/pganapathiramkumar-cell/RamVectorWeb"
+                  href="https://linkedin.com/in/palaniram"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${styles.ctaBtn} ${styles.ctaBtnOutline}`}
                 >
-                  <Github size={15} /> View GitHub
+                  <Linkedin size={15} /> LinkedIn
                 </a>
               </div>
             </div>

@@ -1,14 +1,14 @@
-import { Mail, Phone, Github, ExternalLink, Globe, Cpu, Users, Shield } from 'lucide-react';
+import { Mail, Phone, Github, ExternalLink, Globe, Cpu, Users, Shield, Linkedin } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from '../styles/About.module.css';
 
 const metrics = [
-  { value: '12+', label: 'Years Enterprise Experience' },
-  { value: '50+', label: 'Projects Delivered' },
-  { value: '5+',  label: 'GenAI Platforms' },
-  { value: '3',   label: 'Cloud Environments' },
-  { value: '20+', label: 'Stakeholders Managed' },
-  { value: '4',   label: 'Industry Verticals' },
+  { value: '14+',   label: 'Years Enterprise Experience' },
+  { value: '1000+', label: 'Enterprise Users Impacted' },
+  { value: '60%',   label: 'Delivery Acceleration (GenAI)' },
+  { value: '15',    label: 'Engineers Led (UK & India)' },
+  { value: '5',     label: 'Azure Expert Certifications' },
+  { value: '4',     label: 'Anthropic AI Certifications' },
 ];
 
 const highlights = [
@@ -16,37 +16,39 @@ const highlights = [
     icon: Cpu,
     color: '#6366f1',
     bg: 'rgba(99,102,241,0.12)',
-    title: 'AI-First Architecture',
-    text: 'Designs production-grade LLM systems with governance, observability, and cost control built in from day one.',
+    title: 'Production GenAI Platform Delivery',
+    text: 'Architected Claude (Bedrock) + Azure OpenAI platforms achieving 60% delivery acceleration across 1,000+ enterprise users — with responsible-AI governance and full observability.',
   },
   {
     icon: Globe,
     color: '#06b6d4',
     bg: 'rgba(6,182,212,0.12)',
     title: 'Multi-Cloud Platform Engineering',
-    text: 'Delivered greenfield and migration programs across Azure, AWS, and hybrid environments at enterprise scale.',
+    text: 'Delivered greenfield and migration programmes across Azure and AWS — including GCP-to-Azure migration with Zero Trust IAM — at enterprise scale across UK, India, and Saudi Arabia.',
   },
   {
     icon: Users,
     color: '#8b5cf6',
     bg: 'rgba(139,92,246,0.12)',
-    title: 'C-Suite Technology Leadership',
-    text: 'Trusted advisor to CxOs — translating complex technical strategy into boardroom-ready roadmaps and business cases.',
+    title: 'Cross-Functional Team Leadership',
+    text: 'Led 15-engineer cross-functional teams across UK and India, coordinating complex migrations with zero downtime and earning formal client appreciation from Infosys.',
   },
   {
     icon: Shield,
     color: '#10b981',
     bg: 'rgba(16,185,129,0.12)',
-    title: 'Responsible AI & Governance',
-    text: 'Champions ethical AI frameworks, TOGAF-aligned architecture governance, and Zero Trust security models.',
+    title: 'AI Governance & Responsible AI',
+    text: 'Established enterprise AI governance frameworks covering responsible-AI controls, model access policies, audit logging, and TOGAF / Zachman-aligned architecture review.',
   },
 ];
 
 const profile = [
-  { icon: Mail,        label: 'pganapathiramkumar@gmail.com', href: 'mailto:pganapathiramkumar@gmail.com' },
-  { icon: Phone,       label: '+91 7996656111',                href: 'tel:+917996656111' },
-  { icon: Github,      label: 'pganapathiramkumar-cell',       href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb', external: true },
-  { icon: ExternalLink,label: 'RamVector on App Store',        href: 'https://apps.apple.com/in/app/ramvector/id6763949988', external: true },
+  { icon: Mail,        label: 'pganapathiramkumar@gmail.com',   href: 'mailto:pganapathiramkumar@gmail.com' },
+  { icon: Phone,       label: '+91 7996656111',                  href: 'tel:+917996656111' },
+  { icon: Linkedin,    label: 'linkedin.com/in/palaniram',       href: 'https://linkedin.com/in/palaniram',   external: true },
+  { icon: Globe,       label: 'www.ramkumar.cloud',              href: 'https://www.ramkumar.cloud',          external: true },
+  { icon: Github,      label: 'pganapathiramkumar-cell',         href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb', external: true },
+  { icon: ExternalLink,label: 'RamVector on App Store',          href: 'https://apps.apple.com/in/app/ramvector/id6763949988', external: true },
 ];
 
 export default function About() {
@@ -63,17 +65,19 @@ export default function About() {
             </div>
 
             <p className={`${styles.bio} fade-up`}>
-              <strong>Ganapathi Ramkumar Palanivelu</strong> is a senior AI and Enterprise Architect with 12+ years of experience
-              designing mission-critical systems at the intersection of artificial intelligence, cloud infrastructure,
-              and enterprise strategy. Trusted by C-level stakeholders across financial services, logistics,
-              and healthcare, he has delivered 50+ end-to-end architecture engagements — from greenfield AI
-              platform design to multi-cloud transformation programs.
+              <strong>Ganapathi Ramkumar Palanivel</strong> is an Enterprise AI Architect and Solution Architect
+              with 14+ years designing and delivering scalable AI platforms, multi-cloud architectures, and
+              enterprise transformation programmes across Azure and AWS. He has architected production GenAI
+              systems using Claude (AWS Bedrock), Azure OpenAI Service, and GPT-4 — driving 60% delivery
+              acceleration across 1,000+ enterprise users.
             </p>
             <p className={`${styles.bio} fade-up`}>
-              As the creator of <strong>RamVector</strong> — an AI-native document intelligence platform
-              available on the Apple App Store — he bridges the gap between cutting-edge LLM engineering
-              and enterprise governance frameworks, designing systems that are technically sound,
-              strategically aligned, cost-optimised, and production-ready from day one.
+              As the creator of <strong>RamVector</strong> — a full-stack RAG AI assistant platform with FastAPI,
+              PostgreSQL, Redis, RabbitMQ, and multi-LLM support (OpenAI GPT-4, Groq, Ollama), now live on the
+              Apple App Store — he brings end-to-end expertise from LLM selection and retrieval architecture to
+              evaluation pipelines and responsible-AI controls. TOGAF / Zachman aligned, Azure Solutions Architect
+              Expert (AZ-305) | Anthropic Certified, with cross-functional team leadership spanning 15 engineers
+              across UK and India.
             </p>
 
             <div className={styles.highlights}>
