@@ -17,8 +17,9 @@ const projects = [
     ],
     stack: ['React', 'Python', 'FastAPI', 'PostgreSQL 16', 'Redis 7', 'RabbitMQ', 'OpenAI GPT-4', 'Groq', 'Ollama', 'pgvector', 'Prometheus', 'Docker'],
     links: [
-      { label: 'App Store', href: 'https://apps.apple.com/in/app/ramvector/id6763949988', primary: true },
-      { label: 'GitHub',    href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb', primary: false },
+      { label: 'App Store', href: 'https://apps.apple.com/in/app/ramvector/id6763949988',                                                          primary: true },
+      { label: 'Live Web',  href: 'https://ram-app-bot-web-git-main-pganapathiramkumar-cells-projects.vercel.app/documents',                        primary: true },
+      { label: 'GitHub',    href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb',                                                        primary: false },
     ],
     featured: true,
   },
