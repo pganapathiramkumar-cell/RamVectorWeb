@@ -65,6 +65,14 @@ export default function About() {
               <h2 className="section-title">Architecting <span>AI-Driven</span> Enterprise Transformation</h2>
             </div>
 
+            <div className={`${styles.taglineRow} fade-up`}>
+              {['Production GenAI Systems', 'RAG & Multi-LLM Architecture', 'Automation Modernisation', 'Multi-Cloud Platform'].map((tag, i) => (
+                <span key={tag} className={styles.taglinePill} style={{ animationDelay: `${i * 120}ms` }}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+
             <p className={`${styles.bio} fade-up`}>
               <strong>Ganapathi Ramkumar Palanivelu</strong> is an Enterprise AI Architect and Solution Architect
               with 14+ years designing and delivering scalable AI platforms, multi-cloud architectures, and
