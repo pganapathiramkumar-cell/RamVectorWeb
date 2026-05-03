@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.logoArea}>
-          <div className={styles.logoMark}>RV</div>
+          <div className={styles.logoMark}>Ram</div>
           <span className={styles.logoText}>
             <strong>Ganapathi Ramkumar Palanivelu</strong> · AI &amp; Enterprise Architect
           </span>

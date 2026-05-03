@@ -27,7 +27,7 @@ export default function Navbar() {
       <nav className={`${styles.nav} ${scrolled ? styles.navScrolled : ''}`}>
         <div className={styles.inner}>
           <a href="#home" className={styles.logo}>
-            <div className={styles.logoMark}>RV</div>
+            <div className={styles.logoMark}>Ram</div>
             <div className={styles.logoText}>
               <span className={styles.logoName}>Ram</span>
               <span className={styles.logoRole}>AI · Enterprise Architect</span>

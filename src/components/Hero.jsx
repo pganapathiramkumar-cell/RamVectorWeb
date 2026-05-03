@@ -79,7 +79,7 @@ export default function Hero() {
                 <Cpu size={13} />
                 AI &amp; Enterprise Architect
               </div>
-              <div className={styles.profileBrand}>RV</div>
+              <div className={styles.profileBrand}>Ram</div>
             </div>
           </div>
 

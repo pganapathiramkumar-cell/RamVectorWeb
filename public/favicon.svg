@@ -7,5 +7,5 @@
   </defs>
   <rect width="32" height="32" rx="8" fill="url(#g)"/>
   <text x="16" y="22" font-family="Inter,sans-serif" font-size="14" font-weight="800"
-        fill="white" text-anchor="middle" letter-spacing="-0.5">RV</text>
+        fill="white" text-anchor="middle" letter-spacing="-0.5" font-size="11">Ram</text>
 </svg>
