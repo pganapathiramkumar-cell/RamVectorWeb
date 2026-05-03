@@ -1,6 +1,5 @@
-import { ArrowRight, Mail, Cpu } from 'lucide-react';
+import { ArrowRight, Mail, Cpu, Sparkles } from 'lucide-react';
 import styles from '../styles/Hero.module.css';
-
 
 export default function Hero() {
   return (
@@ -8,11 +7,12 @@ export default function Hero() {
       <div className={styles.gridBg} aria-hidden="true" />
       <div className={styles.glowOrb1} aria-hidden="true" />
       <div className={styles.glowOrb2} aria-hidden="true" />
+      <div className={styles.glowOrb3} aria-hidden="true" />
 
       <div className={styles.container}>
         <div className={styles.heroInner}>
 
-          {/* ── Left: Text content ── */}
+          {/* ── Left: Text ── */}
           <div className={styles.heroLeft}>
             <div className={styles.badge}>
               <span className={styles.badgeDot} />
@@ -44,28 +44,50 @@ export default function Hero() {
                 <Mail size={15} /> Get In Touch
               </a>
             </div>
-
           </div>
 
           {/* ── Right: Profile photo ── */}
           <div className={styles.heroRight}>
             <div className={styles.profileWrap}>
-              <div className={styles.profileRing}>
+
+              {/* deep glow behind photo */}
+              <div className={styles.profileGlowBg} aria-hidden="true" />
+
+              {/* slow-spin conic outer ring */}
+              <div className={styles.profileOuterRing} aria-hidden="true">
+                <div className={styles.profileOuterInner} />
+              </div>
+
+              {/* counter-spin dashed ring */}
+              <div className={styles.profileDashedRing} aria-hidden="true" />
+
+              {/* photo */}
+              <div className={styles.profilePhotoRing}>
                 <img
                   src="/profile.png"
-                  alt="Ganapathi Ramkumar Palanivelu — AI Architect, Enterprise Architect, Solution Architect, and Creator of RamVector AI Document Intelligence Platform"
+                  alt="Ganapathi Ramkumar Palanivelu — AI Architect, Enterprise Architect, Solution Architect, Creator of RamVector"
                   className={styles.profileImg}
                   loading="eager"
-                  width="320"
-                  height="320"
+                  width="300"
+                  height="300"
                 />
               </div>
-              <div className={styles.profileOrb} aria-hidden="true" />
+
+              {/* floating badge */}
               <div className={styles.profileBadge}>
-                <Cpu size={13} />
+                <Cpu size={12} />
                 AI &amp; Enterprise Architect
               </div>
-              <div className={styles.profileBrand}>Ram</div>
+
+              {/* brand mark */}
+              <div className={styles.profileBrand}>
+                <Sparkles size={10} />
+                Ram
+              </div>
+
+              {/* decorative corner dots */}
+              <span className={`${styles.dot} ${styles.dotTR}`} aria-hidden="true" />
+              <span className={`${styles.dot} ${styles.dotBL}`} aria-hidden="true" />
             </div>
           </div>
 
