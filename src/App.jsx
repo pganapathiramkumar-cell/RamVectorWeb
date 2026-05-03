@@ -4,7 +4,6 @@ import About from './components/About';
 import Competencies from './components/Competencies';
 import ArchitectureExpertise from './components/ArchitectureExpertise';
 import AIShowcase from './components/AIShowcase';
-import WorkExperience from './components/WorkExperience';
 import Projects from './components/Projects';
 import TechStack from './components/TechStack';
 import Certifications from './components/Certifications';
@@ -23,7 +22,6 @@ export default function App() {
         <Competencies />
         <ArchitectureExpertise />
         <AIShowcase />
-        <WorkExperience />
         <Projects />
         <TechStack />
         <Certifications />
