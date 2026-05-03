@@ -29,7 +29,7 @@ export default function Navbar() {
           <a href="#home" className={styles.logo}>
             <div className={styles.logoMark}>RV</div>
             <div className={styles.logoText}>
-              <span className={styles.logoName}>G. Ramkumar Palanivel</span>
+              <span className={styles.logoName}>Ram</span>
               <span className={styles.logoRole}>AI · Enterprise Architect</span>
             </div>
           </a>

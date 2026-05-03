@@ -28,7 +28,7 @@ export default function Hero() {
             <h1 className={styles.name}>
               Ganapathi<br />
               Ramkumar<br />
-              <span className={styles.nameAccent}>Palanivel</span>
+              <span className={styles.nameAccent}>Palanivelu</span>
             </h1>
 
             <div className={styles.title}>
@@ -67,7 +67,7 @@ export default function Hero() {
               <div className={styles.profileRing}>
                 <img
                   src="/profile.png"
-                  alt="Ganapathi Ramkumar Palanivel — AI Architect, Enterprise Architect, Solution Architect, and Creator of RamVector AI Document Intelligence Platform"
+                  alt="Ganapathi Ramkumar Palanivelu — AI Architect, Enterprise Architect, Solution Architect, and Creator of RamVector AI Document Intelligence Platform"
                   className={styles.profileImg}
                   loading="eager"
                   width="320"

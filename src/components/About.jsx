@@ -66,7 +66,7 @@ export default function About() {
             </div>
 
             <p className={`${styles.bio} fade-up`}>
-              <strong>Ganapathi Ramkumar Palanivel</strong> is an Enterprise AI Architect and Solution Architect
+              <strong>Ganapathi Ramkumar Palanivelu</strong> is an Enterprise AI Architect and Solution Architect
               with 14+ years designing and delivering scalable AI platforms, multi-cloud architectures, and
               enterprise transformation programmes across Azure and AWS. He has architected production GenAI
               systems using Claude (AWS Bedrock), Azure OpenAI Service, and GPT-4 — driving 60% delivery

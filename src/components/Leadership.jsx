@@ -107,7 +107,7 @@ export default function Leadership() {
                 it is to create the conditions where the right decisions can be made quickly,
                 consistently, and in alignment with where the business is going."
               </p>
-              <span className={styles.quoteAuthor}>— Ganapathi Ramkumar Palanivel · Architecture Philosophy</span>
+              <span className={styles.quoteAuthor}>— Ganapathi Ramkumar Palanivelu · Architecture Philosophy</span>
             </div>
 
             <div className={styles.approach}>
