@@ -1,0 +1,118 @@
+.wrapper {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.frameworkGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.frameworkCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.frameworkCard:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-2px);
+}
+
+.fwTop {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.fwBadge {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+}
+
+.fwTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.fwDesc {
+  font-size: 0.815rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.fwLayers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.fwLayer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.77rem;
+  color: var(--text-muted);
+}
+
+.fwLayerDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent-indigo);
+  flex-shrink: 0;
+}
+
+.governanceRow {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.govItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.govLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-indigo);
+}
+
+.govValue {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .frameworkGrid { grid-template-columns: 1fr 1fr; }
+  .governanceRow { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .frameworkGrid { grid-template-columns: 1fr; }
+  .governanceRow { grid-template-columns: 1fr; }
+}
