@@ -202,3 +202,9 @@
 @media (max-width: 900px) {
   .inner { grid-template-columns: 1fr; gap: 3rem; }
 }
+
+@media (max-width: 480px) {
+  .ctaBtns { flex-direction: column; }
+  .ctaBtn { width: 100%; justify-content: center; }
+  .cta { padding: 1.75rem 1.25rem; }
+}

@@ -198,3 +198,10 @@
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 480px) {
+  .card { padding: 1.5rem; }
+  .impact { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; padding: 0.75rem; }
+  .actions { flex-direction: column; }
+  .actionBtn { width: 100%; justify-content: center; }
+}

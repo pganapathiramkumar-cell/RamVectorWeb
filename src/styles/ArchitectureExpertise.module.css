@@ -114,5 +114,5 @@
 
 @media (max-width: 600px) {
   .frameworkGrid { grid-template-columns: 1fr; }
-  .governanceRow { grid-template-columns: 1fr; }
+  .governanceRow { grid-template-columns: 1fr; padding: 1.5rem; gap: 1.25rem; }
 }

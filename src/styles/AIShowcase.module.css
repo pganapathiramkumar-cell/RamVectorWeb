@@ -155,6 +155,20 @@
 
 @media (max-width: 768px) {
   .agentGrid { grid-template-columns: 1fr; }
-  .flow { gap: 0.25rem; }
-  .flowArrow { width: 20px; }
+  .pipeline { padding: 1.75rem 1.25rem; }
+  .flow {
+    gap: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+  }
+  .flowArrow { width: 16px; flex-shrink: 0; }
+  .flowBox { min-width: 90px; padding: 0.65rem 0.75rem; }
+  .flowLabel { font-size: 0.65rem; }
+  .flowSub { font-size: 0.58rem; }
+}
+
+@media (max-width: 480px) {
+  .agentGrid { grid-template-columns: 1fr; }
 }
