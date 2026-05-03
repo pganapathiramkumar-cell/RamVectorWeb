@@ -106,10 +106,17 @@ export default function TechStack() {
               </div>
               <div className={styles.catItems}>
                 {cat.items.map(item => (
-                  <span key={item} className={styles.item}>
+                  <a
+                    key={item}
+                    href={`https://www.google.com/search?q=${encodeURIComponent(item)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.item}
+                    title={`Search: ${item}`}
+                  >
                     <span className={styles.itemDot} style={{ background: cat.dotColor }} />
                     {item}
-                  </span>
+                  </a>
                 ))}
               </div>
             </div>

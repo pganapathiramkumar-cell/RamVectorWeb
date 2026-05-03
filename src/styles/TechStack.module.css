@@ -74,7 +74,9 @@
   border: 1px solid var(--border-subtle);
   background: var(--bg-base);
   color: var(--text-secondary);
-  transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
   white-space: nowrap;
 }
 
@@ -82,6 +84,7 @@
   border-color: var(--border-accent);
   color: var(--text-accent);
   background: var(--accent-glow);
+  transform: translateY(-1px);
 }
 
 .itemDot {
