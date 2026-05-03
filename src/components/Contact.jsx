@@ -41,7 +41,7 @@ const roles = [
   'Chief Architect / VP of Architecture',
   'Principal AI Architect (GenAI / LLM platforms)',
   'Enterprise Architecture Lead or Director',
-  'CTO / Head of Technology (scale-up or enterprise)',
+  'VP Engineering / Head of Architecture',
   'Strategic Advisory & Pre-Sales Architecture',
 ];
 

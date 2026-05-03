@@ -63,7 +63,7 @@ export default function About() {
             </div>
 
             <p className={`${styles.bio} fade-up`}>
-              <strong>Ramkumar Palanivel</strong> is a senior AI and Enterprise Architect with 12+ years of experience
+              <strong>Ganapathi Ramkumar Palanivelu</strong> is a senior AI and Enterprise Architect with 12+ years of experience
               designing mission-critical systems at the intersection of artificial intelligence, cloud infrastructure,
               and enterprise strategy. Trusted by C-level stakeholders across financial services, logistics,
               and healthcare, he has delivered 50+ end-to-end architecture engagements — from greenfield AI
