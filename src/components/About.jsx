@@ -2,14 +2,6 @@ import { Mail, Phone, Github, ExternalLink, Globe, Cpu, Users, Shield, Linkedin 
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from '../styles/About.module.css';
 
-const metrics = [
-  { value: '14+',   label: 'Years Enterprise Experience' },
-  { value: '1000+', label: 'Enterprise Users Impacted' },
-  { value: '60%',   label: 'Delivery Acceleration (GenAI)' },
-  { value: '15',    label: 'Engineers Led (UK & India)' },
-  { value: '5',     label: 'Azure Expert Certifications' },
-  { value: '4',     label: 'Anthropic AI Certifications' },
-];
 
 const highlights = [
   {
@@ -105,16 +97,7 @@ export default function About() {
           </div>
 
           <div className={styles.right}>
-            <div className={`${styles.metricsGrid} fade-up`}>
-              {metrics.map(m => (
-                <div key={m.label} className={styles.metric}>
-                  <span className={styles.metricValue}>{m.value}</span>
-                  <span className={styles.metricLabel}>{m.label}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className={`${styles.profileCard} fade-up`}>
+<div className={`${styles.profileCard} fade-up`}>
               {profile.map(p => (
                 <div key={p.label} className={styles.profileRow}>
                   <p.icon size={15} className={styles.profileIcon} />
