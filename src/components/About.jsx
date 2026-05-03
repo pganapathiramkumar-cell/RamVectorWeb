@@ -45,10 +45,11 @@ const highlights = [
 const profile = [
   { icon: Mail,        label: 'pganapathiramkumar@gmail.com',   href: 'mailto:pganapathiramkumar@gmail.com' },
   { icon: Phone,       label: '+91 7996656111',                  href: 'tel:+917996656111' },
-  { icon: Linkedin,    label: 'linkedin.com/in/palaniram',       href: 'https://linkedin.com/in/palaniram',   external: true },
-  { icon: Globe,       label: 'www.ramkumar.cloud',              href: 'https://www.ramkumar.cloud',          external: true },
+  { icon: Linkedin,    label: 'linkedin.com/in/palaniram',       href: 'https://linkedin.com/in/palaniram',                      external: true },
+  { icon: Globe,       label: 'www.ramkumar.cloud',              href: 'https://www.ramkumar.cloud',                            external: true },
   { icon: Github,      label: 'pganapathiramkumar-cell',         href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb', external: true },
-  { icon: ExternalLink,label: 'RamVector on App Store',          href: 'https://apps.apple.com/in/app/ramvector/id6763949988', external: true },
+  { icon: ExternalLink,label: 'ORCID — 0009-0006-9439-5067',    href: 'https://orcid.org/0009-0006-9439-5067',                  external: true },
+  { icon: ExternalLink,label: 'RamVector on App Store',          href: 'https://apps.apple.com/in/app/ramvector/id6763949988',  external: true },
 ];
 
 export default function About() {

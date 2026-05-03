@@ -45,6 +45,14 @@ const contactLinks = [
   },
   {
     icon: ExternalLink,
+    iconBg: 'rgba(166,255,140,0.12)',
+    iconColor: '#a6d96a',
+    label: 'ORCID',
+    value: '0009-0006-9439-5067',
+    href: 'https://orcid.org/0009-0006-9439-5067',
+  },
+  {
+    icon: ExternalLink,
     iconBg: 'rgba(6,182,212,0.15)',
     iconColor: '#06b6d4',
     label: 'App Store',

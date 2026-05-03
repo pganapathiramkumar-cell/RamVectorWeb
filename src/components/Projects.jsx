@@ -1,4 +1,4 @@
-import { Smartphone, ExternalLink, Github, Building2, Brain, Cloud, Zap } from 'lucide-react';
+import { Smartphone, ExternalLink, Github, Building2, Brain, Cloud, Zap, HeartPulse } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from '../styles/Projects.module.css';
 
@@ -35,8 +35,30 @@ const projects = [
       { value: '5–10m',  label: 'Dev Time (was 2wks)' },
     ],
     stack: ['Multi-modal LLM', 'Azure OpenAI', 'GPT-4V', 'React', 'Angular', 'Python', 'Zenodo', 'ORCID'],
-    links: [],
+    links: [
+      { label: 'Zenodo Publication', href: 'https://zenodo.org/records/19560631', primary: true, icon: 'ext' },
+      { label: 'ORCID Profile',      href: 'https://orcid.org/0009-0006-9439-5067', primary: false, icon: 'ext' },
+    ],
     featured: true,
+  },
+  {
+    icon: HeartPulse,
+    iconBg: 'rgba(239,68,68,0.12)',
+    iconColor: '#ef4444',
+    badges: [{ label: 'Peer Reviewed', cls: styles.badgeLive }, { label: 'Research', cls: styles.badgeCase }],
+    title: 'Automated ECG Classification System Using Deep Learning',
+    desc: 'Designed and implemented a deep learning system for automated ECG classification and cardiac abnormality detection. Applied CNN and hybrid deep learning architectures to classify multiple cardiac conditions from 12-lead ECG signals — peer-reviewed and published on Zenodo and indexed on ORCID.',
+    impact: [
+      { value: 'CNN',    label: 'Deep Learning Arch' },
+      { value: '12-lead', label: 'ECG Signal Analysis' },
+      { value: 'Pub.',   label: 'Zenodo & ORCID' },
+    ],
+    stack: ['Deep Learning', 'CNN', 'Python', 'TensorFlow / PyTorch', 'ECG Signal Processing', 'Cardiac AI', 'Zenodo', 'ORCID'],
+    links: [
+      { label: 'Zenodo Publication', href: 'https://zenodo.org/records/19560252', primary: true, icon: 'ext' },
+      { label: 'ORCID Profile',      href: 'https://orcid.org/0009-0006-9439-5067', primary: false, icon: 'ext' },
+    ],
+    featured: false,
   },
   {
     icon: Brain,
@@ -132,7 +154,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className={`${styles.actionBtn} ${l.primary ? styles.actionBtnPrimary : styles.actionBtnGhost}`}
                     >
-                      {l.label === 'App Store' ? <ExternalLink size={14} /> : <Github size={14} />}
+                      {l.label === 'GitHub' ? <Github size={14} /> : <ExternalLink size={14} />}
                       {l.label}
                     </a>
                   ))}
