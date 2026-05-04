@@ -8,7 +8,7 @@ const experiences = [
     dates: 'Feb 2022 – Present',
     location: 'Bangalore, India · Onsite: Belfast, UK',
     current: true,
-    color: '#6366f1',
+    color: '#a855f7',
     bullets: [
       'Architected production GenAI platform using Claude Sonnet / Haiku (AWS Bedrock) and Azure OpenAI Service with a spec-driven delivery model — accelerating WinForms-to-React modernisation by 60% and impacting 1,000+ enterprise users at the Belfast client.',
       'Designed end-to-end RAG architecture for enterprise knowledge extraction: chunking strategy, vector store selection, retrieval evaluation pipeline, and hallucination-mitigation layer using pgvector and LangChain.',
@@ -25,7 +25,7 @@ const experiences = [
     dates: 'Nov 2020 – Feb 2022',
     location: 'Bangalore, India',
     current: false,
-    color: '#06b6d4',
+    color: '#f97316',
     bullets: [
       'Engineered enterprise project tracking platform with multi-feed data pipeline processing, reducing reporting latency for global operations teams.',
     ],
@@ -36,7 +36,7 @@ const experiences = [
     dates: 'Aug 2017 – Nov 2020',
     location: 'Bangalore, India · Onsite: Dammam, Saudi Arabia',
     current: false,
-    color: '#8b5cf6',
+    color: '#ec4899',
     bullets: [
       'Delivered full-cycle ERP implementation (Trio ERP) — requirement gathering, solution design, integration, and production go-live — managing direct C-suite stakeholder engagement across Saudi Arabia operations.',
     ],
@@ -47,7 +47,7 @@ const experiences = [
     dates: 'May 2017 – Aug 2017',
     location: 'Bangalore, India',
     current: false,
-    color: '#10b981',
+    color: '#ef4444',
     bullets: [
       'Delivered RPA and chatbot automation solutions on CI/CD pipelines, reducing manual processing effort across enterprise operations.',
     ],

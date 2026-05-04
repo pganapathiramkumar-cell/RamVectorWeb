@@ -1,9 +1,20 @@
 .pipeline {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.7);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
   padding: 2.5rem;
   margin-bottom: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pipeline::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #6366f1, #ec4899, #f97316);
 }
 
 .pipelineTitle {
@@ -11,7 +22,7 @@
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--accent-indigo);
+  color: var(--accent-orange);
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
@@ -23,7 +34,7 @@
   display: block;
   width: 16px;
   height: 1px;
-  background: var(--accent-indigo);
+  background: var(--accent-orange);
 }
 
 .flow {
@@ -43,18 +54,19 @@
 }
 
 .flowBox {
-  background: var(--bg-surface);
+  background: rgba(5,8,22,0.6);
   border: 1px solid var(--border-default);
   border-radius: var(--radius-md);
   padding: 0.85rem 1.1rem;
   text-align: center;
   min-width: 110px;
-  transition: border-color var(--transition-base), transform var(--transition-base);
+  transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
 }
 
 .flowBox:hover {
-  border-color: var(--border-accent);
+  border-color: rgba(129,140,248,0.4);
   transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(3,6,17,0.5);
 }
 
 .flowIcon {
@@ -84,7 +96,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-muted);
+  color: var(--accent-violet);
   flex-shrink: 0;
 }
 
@@ -95,17 +107,33 @@
 }
 
 .agentCard {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.65);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
-  transition: border-color var(--transition-base), transform var(--transition-base);
+  transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.agentCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad-primary);
+  opacity: 0;
+  transition: opacity var(--transition-base);
 }
 
 .agentCard:hover {
-  border-color: var(--border-accent);
+  border-color: rgba(129,140,248,0.3);
   transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(3,6,17,0.6), var(--shadow-purple);
 }
+
+.agentCard:hover::before { opacity: 0.6; }
 
 .agentTop {
   display: flex;
@@ -136,11 +164,7 @@
   margin-bottom: 1.25rem;
 }
 
-.agentTags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
+.agentTags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
 .agentTag {
   font-size: 0.67rem;
@@ -149,26 +173,27 @@
   border-radius: 100px;
   border: 1px solid var(--border-subtle);
   color: var(--text-muted);
-  background: var(--bg-surface);
+  background: rgba(5,8,22,0.5);
   font-family: var(--font-mono);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.agentTag:hover {
+  border-color: rgba(99,102,241,0.3);
+  color: var(--accent-lavender);
 }
 
 @media (max-width: 768px) {
   .agentGrid { grid-template-columns: 1fr; }
   .pipeline { padding: 1.75rem 1.25rem; }
   .flow {
-    gap: 0;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 1rem;
     scrollbar-width: thin;
   }
-  .flowArrow { width: 16px; flex-shrink: 0; }
+  .flowArrow { width: 16px; }
   .flowBox { min-width: 90px; padding: 0.65rem 0.75rem; }
   .flowLabel { font-size: 0.65rem; }
   .flowSub { font-size: 0.58rem; }
-}
-
-@media (max-width: 480px) {
-  .agentGrid { grid-template-columns: 1fr; }
 }

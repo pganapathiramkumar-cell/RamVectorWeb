@@ -31,7 +31,7 @@
 .groupCount {
   font-size: 0.65rem;
   font-weight: 700;
-  background: var(--bg-elevated);
+  background: rgba(15,20,40,0.8);
   border: 1px solid var(--border-subtle);
   border-radius: 100px;
   padding: 0.1rem 0.45rem;
@@ -47,29 +47,25 @@
 }
 
 .certCard {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.65);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 1.1rem 1.25rem;
   display: flex;
   align-items: flex-start;
   gap: 0.85rem;
-  transition: border-color var(--transition-base), transform var(--transition-base);
+  transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
 }
 
 .certCard:hover {
-  border-color: var(--border-accent);
+  border-color: rgba(249,115,22,0.3);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(3,6,17,0.5);
 }
 
-.certExpired {
-  opacity: 0.6;
-}
-
-.certExpired:hover {
-  opacity: 0.85;
-  border-color: rgba(239,68,68,0.25);
-}
+.certExpired { opacity: 0.6; }
+.certExpired:hover { opacity: 0.85; border-color: rgba(239,68,68,0.25); }
 
 .certIcon {
   width: 36px;
@@ -84,8 +80,6 @@
   letter-spacing: 0.02em;
   text-align: center;
 }
-
-.certBody {}
 
 .certName {
   font-size: 0.82rem;
@@ -138,8 +132,6 @@
   transition: color var(--transition-fast);
 }
 
-.viewAll a:hover { color: var(--accent-indigo); }
+.viewAll a:hover { color: var(--accent-orange); }
 
-@media (max-width: 600px) {
-  .certGrid { grid-template-columns: 1fr; }
-}
+@media (max-width: 600px) { .certGrid { grid-template-columns: 1fr; } }

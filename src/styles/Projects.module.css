@@ -5,7 +5,8 @@
 }
 
 .card {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.7);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
   padding: 2rem;
@@ -16,23 +17,35 @@
   overflow: hidden;
 }
 
-.card::after {
+.card::before {
   content: '';
   position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(99,102,241,0.04) 0%, transparent 60%);
-  pointer-events: none;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad-accent);
+  opacity: 0;
+  transition: opacity var(--transition-base);
 }
 
 .card:hover {
-  border-color: var(--border-accent);
+  border-color: rgba(249,115,22,0.3);
   transform: translateY(-4px);
-  box-shadow: var(--shadow-accent);
+  box-shadow: 0 16px 48px rgba(3,6,17,0.75), 0 0 0 1px rgba(249,115,22,0.12);
 }
 
+.card:hover::before { opacity: 1; }
+
 .featured {
-  border-color: var(--border-accent);
-  background: linear-gradient(135deg, var(--bg-card) 70%, rgba(99,102,241,0.05));
+  border-color: rgba(249,115,22,0.2);
+  background: linear-gradient(135deg, rgba(15,20,40,0.8) 70%, rgba(249,115,22,0.03));
+}
+
+.featured::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad-cta);
 }
 
 .cardTop {
@@ -69,26 +82,26 @@
 
 .badgeLive {
   background: rgba(16,185,129,0.12);
-  color: var(--accent-emerald);
+  color: #10b981;
   border: 1px solid rgba(16,185,129,0.25);
 }
 
 .badgeAI {
   background: rgba(99,102,241,0.12);
-  color: var(--accent-indigo);
+  color: var(--accent-violet);
   border: 1px solid rgba(99,102,241,0.25);
 }
 
 .badgeEnterprise {
-  background: rgba(245,158,11,0.12);
-  color: #f59e0b;
-  border: 1px solid rgba(245,158,11,0.25);
+  background: rgba(249,115,22,0.12);
+  color: var(--accent-orange);
+  border: 1px solid rgba(249,115,22,0.25);
 }
 
 .badgeCase {
-  background: rgba(139,92,246,0.12);
-  color: var(--accent-violet);
-  border: 1px solid rgba(139,92,246,0.25);
+  background: rgba(236,72,153,0.12);
+  color: var(--accent-pink);
+  border: 1px solid rgba(236,72,153,0.25);
 }
 
 .title {
@@ -113,7 +126,7 @@
   gap: 0.75rem;
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background: var(--bg-surface);
+  background: rgba(5,8,22,0.5);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
 }
@@ -128,7 +141,10 @@
 .impactValue {
   font-size: 1.1rem;
   font-weight: 800;
-  color: var(--accent-indigo);
+  background: linear-gradient(135deg, #f97316, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: -0.03em;
 }
 
@@ -151,10 +167,16 @@
   font-weight: 500;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
-  background: var(--bg-surface);
+  background: rgba(5,8,22,0.6);
   border: 1px solid var(--border-subtle);
   color: var(--text-muted);
   font-family: var(--font-mono);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.stackTag:hover {
+  border-color: rgba(99,102,241,0.3);
+  color: var(--accent-lavender);
 }
 
 .actions {
@@ -176,12 +198,14 @@
 }
 
 .actionBtnPrimary {
-  background: var(--accent-indigo);
+  background: linear-gradient(135deg, #f97316, #dc2626);
   color: white;
+  box-shadow: 0 2px 12px rgba(249,115,22,0.3);
 }
+
 .actionBtnPrimary:hover {
-  background: #5254cc;
-  box-shadow: 0 0 20px rgba(99,102,241,0.3);
+  box-shadow: 0 4px 20px rgba(249,115,22,0.5);
+  transform: translateY(-1px) scale(1.02);
 }
 
 .actionBtnGhost {
@@ -189,15 +213,14 @@
   color: var(--text-secondary);
   border: 1px solid var(--border-default);
 }
+
 .actionBtnGhost:hover {
-  color: var(--text-primary);
-  border-color: var(--border-default);
-  background: var(--bg-surface);
+  color: var(--accent-lavender);
+  border-color: rgba(129,140,248,0.4);
+  background: rgba(99,102,241,0.08);
 }
 
-@media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; }
-}
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
 
 @media (max-width: 480px) {
   .card { padding: 1.5rem; }

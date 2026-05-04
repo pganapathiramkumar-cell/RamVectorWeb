@@ -4,8 +4,8 @@ import styles from '../styles/ArchitectureExpertise.module.css';
 const frameworks = [
   {
     badge: 'TOGAF',
-    badgeColor: '#6366f1',
-    badgeBg: 'rgba(99,102,241,0.15)',
+    badgeColor: '#a855f7',
+    badgeBg: 'rgba(147,51,234,0.15)',
     title: 'TOGAF Enterprise Architecture',
     desc: 'Applies TOGAF ADM phases end-to-end — from architecture vision and business architecture through to implementation governance and change management.',
     layers: [
@@ -18,8 +18,8 @@ const frameworks = [
   },
   {
     badge: 'Zachman',
-    badgeColor: '#8b5cf6',
-    badgeBg: 'rgba(139,92,246,0.15)',
+    badgeColor: '#ec4899',
+    badgeBg: 'rgba(236,72,153,0.15)',
     title: 'Zachman Framework Mapping',
     desc: 'Uses the Zachman ontology to provide structured, multi-perspective views of enterprise systems — ensuring every stakeholder sees architecture at the right altitude.',
     layers: [
@@ -32,8 +32,8 @@ const frameworks = [
   },
   {
     badge: 'HLD · LLD',
-    badgeColor: '#06b6d4',
-    badgeBg: 'rgba(6,182,212,0.15)',
+    badgeColor: '#f97316',
+    badgeBg: 'rgba(249,115,22,0.15)',
     title: 'HLD / LLD Architecture Design',
     desc: 'Produces decision-ready architecture artefacts — from high-level conceptual diagrams for C-suite alignment to detailed technical specifications for engineering teams.',
     layers: [

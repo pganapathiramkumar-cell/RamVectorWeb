@@ -5,12 +5,10 @@
   align-items: start;
 }
 
-.left {}
-
 .pillars {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.85rem;
   margin-top: 2rem;
 }
 
@@ -19,31 +17,45 @@
   align-items: flex-start;
   gap: 1.25rem;
   padding: 1.5rem;
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.65);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  transition: border-color var(--transition-base), transform var(--transition-base);
+  transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.pillar::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0; width: 2px;
+  background: var(--grad-accent);
+  opacity: 0;
+  transition: opacity var(--transition-base);
 }
 
 .pillar:hover {
-  border-color: var(--border-accent);
+  border-color: rgba(249,115,22,0.3);
   transform: translateX(4px);
+  box-shadow: 0 8px 24px rgba(3,6,17,0.5);
 }
+
+.pillar:hover::before { opacity: 1; }
 
 .pillarNum {
   font-size: 0.65rem;
   font-weight: 700;
   font-family: var(--font-mono);
-  color: var(--accent-indigo);
-  background: var(--accent-glow);
-  border: 1px solid var(--border-accent);
+  color: var(--accent-orange);
+  background: rgba(249,115,22,0.1);
+  border: 1px solid rgba(249,115,22,0.25);
   border-radius: var(--radius-sm);
   padding: 0.25rem 0.5rem;
   flex-shrink: 0;
   letter-spacing: 0.05em;
 }
-
-.pillarContent {}
 
 .pillarTitle {
   font-size: 0.9rem;
@@ -58,12 +70,11 @@
   line-height: 1.6;
 }
 
-.right {}
-
 .quoteBlock {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.65);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
-  border-left: 3px solid var(--accent-indigo);
+  border-left: 3px solid var(--accent-pink);
   border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
   padding: 2rem;
   margin-bottom: 1.5rem;
@@ -91,14 +102,18 @@
 }
 
 .approachItem {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.65);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 1.25rem;
-  transition: border-color var(--transition-base);
+  transition: border-color var(--transition-base), transform var(--transition-base);
 }
 
-.approachItem:hover { border-color: var(--border-accent); }
+.approachItem:hover {
+  border-color: rgba(129,140,248,0.3);
+  transform: translateY(-2px);
+}
 
 .approachIcon {
   width: 32px;

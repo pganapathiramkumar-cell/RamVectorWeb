@@ -5,8 +5,8 @@ import styles from '../styles/Certifications.module.css';
 const certGroups = [
   {
     label: 'Microsoft Azure',
-    color: '#0ea5e9',
-    bg: 'rgba(14,165,233,0.15)',
+    color: '#a855f7',
+    bg: 'rgba(147,51,234,0.15)',
     abbr: 'AZ',
     certs: [
       { name: 'Microsoft Certified: Azure Solutions Architect Expert', code: 'AZ-305', validity: 'Valid through Jun 2027', credId: '2E0F6745D2329A76' },
@@ -20,8 +20,8 @@ const certGroups = [
   },
   {
     label: 'Anthropic AI',
-    color: '#8b5cf6',
-    bg: 'rgba(139,92,246,0.15)',
+    color: '#ec4899',
+    bg: 'rgba(236,72,153,0.15)',
     abbr: 'AI',
     certs: [
       { name: 'Model Context Protocol: Advanced Topics', code: 'Anthropic', validity: 'Apr 2026', credId: 'yxc7fs2knagh' },
@@ -32,8 +32,8 @@ const certGroups = [
   },
   {
     label: 'Project Management Institute (PMI)',
-    color: '#10b981',
-    bg: 'rgba(16,185,129,0.15)',
+    color: '#f97316',
+    bg: 'rgba(249,115,22,0.15)',
     abbr: 'PMI',
     certs: [
       { name: 'Introduction to Cognitive Project Management in AI (CPMAI)™', code: 'PMI', validity: 'Jul 2025' },
@@ -45,8 +45,8 @@ const certGroups = [
   },
   {
     label: 'LinkedIn Learning',
-    color: '#0ea5e9',
-    bg: 'rgba(14,165,233,0.12)',
+    color: '#ef4444',
+    bg: 'rgba(220,38,38,0.12)',
     abbr: 'LI',
     certs: [
       { name: 'LLM Foundations: Vector Databases for Caching and Retrieval Augmented Generation (RAG)', code: 'LinkedIn', validity: 'Apr 2026' },

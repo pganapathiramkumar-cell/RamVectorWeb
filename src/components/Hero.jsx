@@ -1,9 +1,12 @@
-import { ArrowRight, Mail, Cpu, Sparkles } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { heroLeft, heroItem, heroRight } from '../animations/variants';
 import styles from '../styles/Hero.module.css';
 
 export default function Hero() {
   return (
     <section className={styles.hero} id="home">
+      <div className={styles.gradientBg} aria-hidden="true" />
       <div className={styles.gridBg} aria-hidden="true" />
       <div className={styles.glowOrb1} aria-hidden="true" />
       <div className={styles.glowOrb2} aria-hidden="true" />
@@ -12,84 +15,67 @@ export default function Hero() {
       <div className={styles.container}>
         <div className={styles.heroInner}>
 
-          {/* ── Left: Text ── */}
-          <div className={styles.heroLeft}>
-            <div className={styles.badge}>
-              <span className={styles.badgeDot} />
-              Open to Senior Leadership &amp; Principal Architecture Roles
-            </div>
-
-            <h1 className={styles.name}>
+          {/* ── Left: Text content (staggered page load) ── */}
+          <motion.div
+            className={styles.heroLeft}
+            variants={heroLeft}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.h1 className={styles.name} variants={heroItem}>
               Ganapathi<br />
               Ramkumar<br />
               <span className={styles.nameAccent}>Palanivelu</span>
-            </h1>
+            </motion.h1>
 
-            <div className={styles.title}>
+            <motion.div className={styles.title} variants={heroItem}>
               AI Architect &nbsp;·&nbsp; Enterprise Architect &nbsp;·&nbsp;
               <span>Technology Strategist</span>
-            </div>
+            </motion.div>
 
-            <p className={styles.statement}>
+            <motion.p className={styles.statement} variants={heroItem}>
               Engineering the <strong>intelligence layer of the enterprise</strong> — from RAG pipelines
               and multi-agent systems to TOGAF-aligned cloud architectures that
               convert AI investments into measurable business value.
-            </p>
+            </motion.p>
 
-            <div className={styles.actions}>
+            <motion.div className={styles.actions} variants={heroItem}>
               <a href="#projects" className={styles.btnPrimary}>
                 View Architecture Portfolio <ArrowRight size={16} />
               </a>
               <a href="#contact" className={styles.btnOutline}>
                 <Mail size={15} /> Get In Touch
               </a>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          {/* ── Right: Profile photo ── */}
-          <div className={styles.heroRight}>
+          {/* ── Right: Profile photo (fade + scale) ── */}
+          <motion.div
+            className={styles.heroRight}
+            variants={heroRight}
+            initial="hidden"
+            animate="visible"
+          >
             <div className={styles.profileWrap}>
-
-              {/* deep glow behind photo */}
               <div className={styles.profileGlowBg} aria-hidden="true" />
-
-              {/* slow-spin conic outer ring */}
               <div className={styles.profileOuterRing} aria-hidden="true">
                 <div className={styles.profileOuterInner} />
               </div>
-
-              {/* counter-spin dashed ring */}
               <div className={styles.profileDashedRing} aria-hidden="true" />
-
-              {/* photo */}
               <div className={styles.profilePhotoRing}>
                 <img
                   src="/profile.png"
-                  alt="Ganapathi Ramkumar Palanivelu — AI Architect, Enterprise Architect, Solution Architect, Creator of RamVector"
+                  alt="Ganapathi Ramkumar Palanivelu — AI Architect, Enterprise Architect"
                   className={styles.profileImg}
                   loading="eager"
                   width="300"
                   height="300"
                 />
               </div>
-
-              {/* floating badge */}
-              <div className={styles.profileBadge}>
-                <Cpu size={12} />
-                AI &amp; Enterprise Architect
-              </div>
-
-              {/* brand mark */}
-              <div className={styles.profileBrand}>
-                <Sparkles size={10} />
-                Ram
-              </div>
-
-              {/* decorative corner dots */}
               <span className={`${styles.dot} ${styles.dotTR}`} aria-hidden="true" />
               <span className={`${styles.dot} ${styles.dotBL}`} aria-hidden="true" />
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>

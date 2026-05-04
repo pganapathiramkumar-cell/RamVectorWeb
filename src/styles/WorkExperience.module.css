@@ -5,18 +5,34 @@
 }
 
 .card {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.65);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-left: 3px solid var(--accent-indigo);
   border-radius: var(--radius-lg);
   padding: 1.75rem 2rem;
   transition: border-left-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: var(--grad-accent);
+  opacity: 0;
+  transition: opacity var(--transition-base);
 }
 
 .card:hover {
   transform: translateX(4px);
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 8px 32px rgba(3,6,17,0.6);
+  border-left-color: var(--accent-orange);
 }
+
+.card:hover::before { opacity: 0.6; }
 
 .cardTop {
   display: flex;
@@ -101,7 +117,7 @@
 }
 
 .earlyRoles {
-  background: var(--bg-surface);
+  background: rgba(5,8,22,0.5);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 1.25rem 1.75rem;
@@ -110,10 +126,7 @@
   line-height: 1.75;
 }
 
-.earlyRoles strong {
-  color: var(--text-secondary);
-  font-weight: 600;
-}
+.earlyRoles strong { color: var(--text-secondary); font-weight: 600; }
 
 @media (max-width: 768px) {
   .cardTop { flex-direction: column; gap: 0.75rem; }

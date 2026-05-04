@@ -1,14 +1,14 @@
 import { Brain, Cloud, Building2, TrendingUp } from 'lucide-react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { motion } from 'framer-motion';
+import { fadeInUp, staggerContainer, cardVariant, viewportOptions } from '../animations/variants';
 import styles from '../styles/Competencies.module.css';
 
 const categories = [
   {
     icon: Brain,
-    iconColor: '#6366f1',
-    iconBg: 'rgba(99,102,241,0.12)',
-    dotColor: '#6366f1',
-    barColor: 'linear-gradient(90deg, #6366f1, #8b5cf6)',
+    iconColor: '#a855f7',
+    iconBg: 'rgba(147,51,234,0.12)',
+    dotColor: '#a855f7',
     title: 'AI & GenAI Architecture',
     items: [
       'LLM Systems Design & RAG Pipeline Architecture',
@@ -23,10 +23,9 @@ const categories = [
   },
   {
     icon: Cloud,
-    iconColor: '#06b6d4',
-    iconBg: 'rgba(6,182,212,0.12)',
-    dotColor: '#06b6d4',
-    barColor: 'linear-gradient(90deg, #06b6d4, #6366f1)',
+    iconColor: '#f97316',
+    iconBg: 'rgba(249,115,22,0.12)',
+    dotColor: '#f97316',
     title: 'Cloud & Platform Engineering',
     items: [
       'Multi-Cloud Design (Azure & AWS)',
@@ -41,10 +40,9 @@ const categories = [
   },
   {
     icon: Building2,
-    iconColor: '#8b5cf6',
-    iconBg: 'rgba(139,92,246,0.12)',
-    dotColor: '#8b5cf6',
-    barColor: 'linear-gradient(90deg, #8b5cf6, #a78bfa)',
+    iconColor: '#ec4899',
+    iconBg: 'rgba(236,72,153,0.12)',
+    dotColor: '#ec4899',
     title: 'Enterprise Architecture',
     items: [
       'TOGAF-Aligned Architecture Governance',
@@ -59,10 +57,9 @@ const categories = [
   },
   {
     icon: TrendingUp,
-    iconColor: '#10b981',
-    iconBg: 'rgba(16,185,129,0.12)',
-    dotColor: '#10b981',
-    barColor: 'linear-gradient(90deg, #10b981, #06b6d4)',
+    iconColor: '#ef4444',
+    iconBg: 'rgba(239,68,68,0.12)',
+    dotColor: '#ef4444',
     title: 'Leadership & Strategy',
     items: [
       'C-Suite Communication & Executive Advisory',
@@ -78,23 +75,32 @@ const categories = [
 ];
 
 export default function Competencies() {
-  const ref = useScrollAnimation();
-
   return (
-    <section className="section" id="competencies" ref={ref}>
+    <section className="section" id="competencies">
       <div className="container">
-        <div className="fade-up">
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOptions}
+        >
           <span className="section-label">Core Competencies</span>
           <h2 className="section-title">Four Pillars of <span>Strategic Expertise</span></h2>
           <p className="section-sub">
             A rare combination of deep technical depth and executive-level breadth — built over 14+ years
             of enterprise architecture and AI platform delivery.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.grid}>
+        <motion.div
+          className={styles.grid}
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOptions}
+        >
           {categories.map(cat => (
-            <div key={cat.title} className={`${styles.card} fade-up`}>
+            <motion.div key={cat.title} className={styles.card} variants={cardVariant}>
               <div className={styles.cardHeader}>
                 <div className={styles.iconWrap} style={{ background: cat.iconBg, color: cat.iconColor }}>
                   <cat.icon size={20} />
@@ -104,7 +110,6 @@ export default function Competencies() {
                   <div className={styles.cardCount}>{cat.items.length} competencies</div>
                 </div>
               </div>
-
               <div className={styles.items}>
                 {cat.items.map(item => (
                   <div key={item} className={styles.item}>
@@ -113,9 +118,9 @@ export default function Competencies() {
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

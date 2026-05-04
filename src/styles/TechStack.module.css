@@ -11,6 +11,7 @@
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
   overflow: hidden;
+  background: rgba(15,20,40,0.5);
 }
 
 .category {
@@ -21,7 +22,7 @@
 }
 
 .category:last-child { border-bottom: none; }
-.category:hover { background: var(--bg-card); }
+.category:hover { background: rgba(15,20,40,0.8); }
 
 .catLabel {
   padding: 1.5rem 2rem;
@@ -46,7 +47,6 @@
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.2rem;
-  letter-spacing: -0.01em;
 }
 
 .catSub {
@@ -72,18 +72,17 @@
   font-size: 0.78rem;
   font-weight: 500;
   border: 1px solid var(--border-subtle);
-  background: var(--bg-base);
+  background: rgba(5,8,22,0.6);
   color: var(--text-secondary);
-  text-decoration: none;
   cursor: pointer;
   transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
   white-space: nowrap;
 }
 
 .item:hover {
-  border-color: var(--border-accent);
-  color: var(--text-accent);
-  background: var(--accent-glow);
+  border-color: rgba(249,115,22,0.4);
+  color: var(--accent-orange);
+  background: rgba(249,115,22,0.08);
   transform: translateY(-1px);
 }
 

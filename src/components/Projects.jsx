@@ -1,12 +1,13 @@
 import { Smartphone, ExternalLink, Github, Zap, HeartPulse } from 'lucide-react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { motion } from 'framer-motion';
+import { fadeInUp, staggerContainer, cardVariant, viewportOptions } from '../animations/variants';
 import styles from '../styles/Projects.module.css';
 
 const projects = [
   {
     icon: Smartphone,
-    iconBg: 'rgba(99,102,241,0.15)',
-    iconColor: '#6366f1',
+    iconBg: 'rgba(147,51,234,0.15)',
+    iconColor: '#a855f7',
     badges: [{ label: 'Live on App Store', cls: styles.badgeLive }, { label: 'AI', cls: styles.badgeAI }],
     title: 'RamVector — Enterprise RAG AI Assistant Platform',
     desc: 'Designed and deployed a full-stack RAG AI assistant — React front-end, Python FastAPI back-end — shipped as a production iOS application on the Apple App Store. Architected a 7-service microservices system (API Gateway, Steer, Skill, Auth, AI Orchestrator, Document, Notification) on PostgreSQL 16, Redis 7, and RabbitMQ 3.13.',
@@ -17,16 +18,16 @@ const projects = [
     ],
     stack: ['React', 'Python', 'FastAPI', 'PostgreSQL 16', 'Redis 7', 'RabbitMQ', 'OpenAI GPT-4', 'Groq', 'Ollama', 'pgvector', 'Prometheus', 'Docker'],
     links: [
-      { label: 'App Store', href: 'https://apps.apple.com/in/app/ramvector/id6763949988',                                                          primary: true },
-      { label: 'Live Web',  href: 'https://ram-app-bot-web-git-main-pganapathiramkumar-cells-projects.vercel.app/documents',                        primary: true },
-      { label: 'GitHub',    href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb',                                                        primary: false },
+      { label: 'App Store', href: 'https://apps.apple.com/in/app/ramvector/id6763949988', primary: true },
+      { label: 'Live Web',  href: 'https://ram-app-bot-web-git-main-pganapathiramkumar-cells-projects.vercel.app/documents', primary: true },
+      { label: 'GitHub',    href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb', primary: false },
     ],
     featured: true,
   },
   {
     icon: Zap,
-    iconBg: 'rgba(245,158,11,0.15)',
-    iconColor: '#f59e0b',
+    iconBg: 'rgba(249,115,22,0.15)',
+    iconColor: '#f97316',
     badges: [{ label: 'Published', cls: styles.badgeLive }, { label: 'AI Innovation', cls: styles.badgeAI }],
     title: 'Vision React Code Generation System',
     desc: 'Architected a multi-modal GenAI platform converting UI images and PDF mockups into production-ready React / Angular code — reducing front-end development effort from ~2 weeks to 5–10 minutes (60–70% efficiency gain). Lowered delivery cost by ~40% through automation of manual front-end effort. Submitted for peer-reviewed publication on Zenodo and ORCID.',
@@ -37,8 +38,8 @@ const projects = [
     ],
     stack: ['Multi-modal LLM', 'Azure OpenAI', 'GPT-4V', 'React', 'Angular', 'Python', 'Zenodo', 'ORCID'],
     links: [
-      { label: 'Zenodo Publication', href: 'https://zenodo.org/records/19560631', primary: true, icon: 'ext' },
-      { label: 'ORCID Profile',      href: 'https://orcid.org/0009-0006-9439-5067', primary: false, icon: 'ext' },
+      { label: 'Zenodo Publication', href: 'https://zenodo.org/records/19560631', primary: true },
+      { label: 'ORCID Profile',      href: 'https://orcid.org/0009-0006-9439-5067', primary: false },
     ],
     featured: true,
   },
@@ -56,33 +57,43 @@ const projects = [
     ],
     stack: ['Deep Learning', 'CNN', 'Python', 'TensorFlow / PyTorch', 'ECG Signal Processing', 'Cardiac AI', 'Zenodo', 'ORCID'],
     links: [
-      { label: 'Zenodo Publication', href: 'https://zenodo.org/records/19560252', primary: true, icon: 'ext' },
-      { label: 'ORCID Profile',      href: 'https://orcid.org/0009-0006-9439-5067', primary: false, icon: 'ext' },
+      { label: 'Zenodo Publication', href: 'https://zenodo.org/records/19560252', primary: true },
+      { label: 'ORCID Profile',      href: 'https://orcid.org/0009-0006-9439-5067', primary: false },
     ],
     featured: false,
   },
 ];
 
 export default function Projects() {
-  const ref = useScrollAnimation();
-
   return (
-    <section className="section" id="projects" ref={ref}>
+    <section className="section" id="projects">
       <div className="container">
-        <div className="fade-up">
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOptions}
+        >
           <span className="section-label">Projects & Case Studies</span>
           <h2 className="section-title">Architecture in <span>Production</span></h2>
           <p className="section-sub">
             From iOS applications to enterprise-scale AI platforms — every project delivers measurable
             outcomes, not just technical deliverables.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.grid}>
+        <motion.div
+          className={styles.grid}
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOptions}
+        >
           {projects.map(p => (
-            <div
+            <motion.div
               key={p.title}
-              className={`${styles.card} ${p.featured ? styles.featured : ''} fade-up`}
+              className={`${styles.card} ${p.featured ? styles.featured : ''}`}
+              variants={cardVariant}
             >
               <div className={styles.cardTop}>
                 <div className={styles.iconWrap} style={{ background: p.iconBg, color: p.iconColor }}>
@@ -129,9 +140,9 @@ export default function Projects() {
                   ))}
                 </div>
               )}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

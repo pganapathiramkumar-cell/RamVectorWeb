@@ -5,7 +5,9 @@
 }
 
 .card {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 2rem;
@@ -17,18 +19,17 @@
 .card::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   height: 2px;
+  background: var(--grad-accent);
   opacity: 0;
   transition: opacity var(--transition-base);
 }
 
 .card:hover {
-  border-color: var(--border-accent);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-accent);
+  border-color: rgba(249,115,22,0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(3,6,17,0.7), 0 0 0 1px rgba(249,115,22,0.15);
 }
 
 .card:hover::before { opacity: 1; }

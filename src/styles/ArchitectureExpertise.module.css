@@ -12,17 +12,33 @@
 }
 
 .frameworkCard {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.65);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
-  transition: border-color var(--transition-base), transform var(--transition-base);
+  transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.frameworkCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad-primary);
+  opacity: 0;
+  transition: opacity var(--transition-base);
 }
 
 .frameworkCard:hover {
-  border-color: var(--border-accent);
+  border-color: rgba(129,140,248,0.3);
   transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(3,6,17,0.6);
 }
+
+.frameworkCard:hover::before { opacity: 1; }
 
 .fwTop {
   display: flex;
@@ -45,7 +61,6 @@
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.6rem;
-  letter-spacing: -0.01em;
 }
 
 .fwDesc {
@@ -55,11 +70,7 @@
   margin-bottom: 1.25rem;
 }
 
-.fwLayers {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
+.fwLayers { display: flex; flex-direction: column; gap: 0.35rem; }
 
 .fwLayer {
   display: flex;
@@ -73,12 +84,13 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: var(--accent-indigo);
+  background: var(--accent-violet);
   flex-shrink: 0;
 }
 
 .governanceRow {
-  background: var(--bg-card);
+  background: rgba(15,20,40,0.65);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 2rem;
@@ -87,18 +99,14 @@
   gap: 2rem;
 }
 
-.govItem {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
+.govItem { display: flex; flex-direction: column; gap: 0.4rem; }
 
 .govLabel {
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent-indigo);
+  color: var(--accent-orange);
 }
 
 .govValue {

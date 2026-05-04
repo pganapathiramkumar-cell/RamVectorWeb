@@ -1,34 +1,37 @@
 import { Mail, Phone, Github, ExternalLink, Globe, Cpu, Users, Shield, Linkedin } from 'lucide-react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { motion } from 'framer-motion';
+import {
+  fadeInUp, fadeInLeft, fadeInRight,
+  staggerContainer, cardVariant, viewportOptions
+} from '../animations/variants';
 import styles from '../styles/About.module.css';
-
 
 const highlights = [
   {
     icon: Cpu,
-    color: '#6366f1',
-    bg: 'rgba(99,102,241,0.12)',
+    color: '#a855f7',
+    bg: 'rgba(147,51,234,0.12)',
     title: 'Production GenAI Platform Delivery',
     text: 'Architected Claude (Bedrock) + Azure OpenAI platforms achieving 60% delivery acceleration across 1,000+ enterprise users — with responsible-AI governance and full observability.',
   },
   {
     icon: Globe,
-    color: '#06b6d4',
-    bg: 'rgba(6,182,212,0.12)',
+    color: '#f97316',
+    bg: 'rgba(249,115,22,0.12)',
     title: 'Multi-Cloud Platform Engineering',
     text: 'Delivered greenfield and migration programmes across Azure and AWS — including GCP-to-Azure migration with Zero Trust IAM — at enterprise scale across UK, India, and Saudi Arabia.',
   },
   {
     icon: Users,
-    color: '#8b5cf6',
-    bg: 'rgba(139,92,246,0.12)',
+    color: '#ec4899',
+    bg: 'rgba(236,72,153,0.12)',
     title: 'Cross-Functional Team Leadership',
     text: 'Led 15-engineer cross-functional teams across UK and India, coordinating complex migrations with zero downtime and earning formal client appreciation from Infosys.',
   },
   {
     icon: Shield,
-    color: '#10b981',
-    bg: 'rgba(16,185,129,0.12)',
+    color: '#ef4444',
+    bg: 'rgba(239,68,68,0.12)',
     title: 'AI Governance & Responsible AI',
     text: 'Established enterprise AI governance frameworks covering responsible-AI controls, model access policies, audit logging, and TOGAF / Zachman-aligned architecture review.',
   },
@@ -45,34 +48,34 @@ const profile = [
 ];
 
 export default function About() {
-  const ref = useScrollAnimation();
-
   return (
-    <section className={`section ${styles.about}`} id="about" ref={ref}>
+    <section className={`section ${styles.about}`} id="about">
       <div className="container">
         <div className={styles.inner}>
-          <div className={styles.left}>
-            <div className="fade-up">
-              <span className="section-label">Executive Summary</span>
-              <h2 className="section-title">Architecting <span>AI-Driven</span> Enterprise Transformation</h2>
-            </div>
+          <motion.div
+            className={styles.left}
+            variants={fadeInLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOptions}
+          >
+            <span className="section-label">Executive Summary</span>
+            <h2 className="section-title">Architecting <span>AI-Driven</span> Enterprise Transformation</h2>
 
-            <div className={`${styles.taglineRow} fade-up`}>
-              {['Production GenAI Systems', 'RAG & Multi-LLM Architecture', 'Automation Modernisation', 'Multi-Cloud Platform'].map((tag, i) => (
-                <span key={tag} className={styles.taglinePill} style={{ animationDelay: `${i * 120}ms` }}>
-                  {tag}
-                </span>
+            <div className={styles.taglineRow}>
+              {['Production GenAI Systems', 'RAG & Multi-LLM Architecture', 'Automation Modernisation', 'Multi-Cloud Platform'].map(tag => (
+                <span key={tag} className={styles.taglinePill}>{tag}</span>
               ))}
             </div>
 
-            <p className={`${styles.bio} fade-up`}>
+            <p className={styles.bio}>
               <strong>Ganapathi Ramkumar Palanivelu</strong> is an Enterprise AI Architect and Solution Architect
               with 14+ years designing and delivering scalable AI platforms, multi-cloud architectures, and
               enterprise transformation programmes across Azure and AWS. He has architected production GenAI
               systems using Claude (AWS Bedrock), Azure OpenAI Service, and GPT-4 — driving 60% delivery
               acceleration across 1,000+ enterprise users.
             </p>
-            <p className={`${styles.bio} fade-up`}>
+            <p className={styles.bio}>
               As the creator of <strong>RamVector</strong> — a full-stack RAG AI assistant platform with FastAPI,
               PostgreSQL, Redis, RabbitMQ, and multi-LLM support (OpenAI GPT-4, Groq, Ollama), now live on the
               Apple App Store — he brings end-to-end expertise from LLM selection and retrieval architecture to
@@ -81,9 +84,15 @@ export default function About() {
               across UK and India.
             </p>
 
-            <div className={styles.highlights}>
+            <motion.div
+              className={styles.highlights}
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportOptions}
+            >
               {highlights.map(h => (
-                <div key={h.title} className={`${styles.highlight} fade-up`}>
+                <motion.div key={h.title} className={styles.highlight} variants={cardVariant}>
                   <div className={styles.highlightIcon} style={{ background: h.bg, color: h.color }}>
                     <h.icon size={18} />
                   </div>
@@ -91,13 +100,19 @@ export default function About() {
                     <h4>{h.title}</h4>
                     <p>{h.text}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div className={styles.right}>
-<div className={`${styles.profileCard} fade-up`}>
+          <motion.div
+            className={styles.right}
+            variants={fadeInRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOptions}
+          >
+            <div className={styles.profileCard}>
               {profile.map(p => (
                 <div key={p.label} className={styles.profileRow}>
                   <p.icon size={15} className={styles.profileIcon} />
@@ -111,7 +126,7 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
