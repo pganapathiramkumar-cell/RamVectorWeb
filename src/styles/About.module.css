@@ -1,3 +1,7 @@
+/* ============================================================
+   ABOUT — tokens from global.css :root
+   ============================================================ */
+
 .about {
   background: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
@@ -26,8 +30,8 @@
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.01em;
-  background: rgba(99,102,241,0.1);
-  border: 1px solid rgba(99,102,241,0.3);
+  background: var(--bg-indigo-soft);
+  border: 1px solid var(--border-indigo);
   color: var(--accent-lavender);
   white-space: nowrap;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
@@ -35,8 +39,8 @@
 
 .taglinePill:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(99,102,241,0.2);
-  background: rgba(99,102,241,0.15);
+  box-shadow: var(--shadow-indigo-sm);
+  background: var(--bg-indigo-strong);
 }
 
 .bio {
@@ -63,7 +67,7 @@
   padding: 1.1rem 1.25rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
-  background: rgba(15,20,40,0.6);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(8px);
   transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
   position: relative;
@@ -81,9 +85,9 @@
 }
 
 .highlight:hover {
-  border-color: rgba(249,115,22,0.3);
+  border-color: var(--border-orange);
   transform: translateX(4px);
-  box-shadow: 0 4px 20px rgba(3,6,17,0.4);
+  box-shadow: var(--shadow-base-sm);
 }
 
 .highlight:hover::before { opacity: 1; }
@@ -115,7 +119,7 @@
 
 .profileCard {
   margin-top: 1rem;
-  background: rgba(15,20,40,0.65);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);

@@ -1,3 +1,7 @@
+/* ============================================================
+   LEADERSHIP — tokens from global.css :root
+   ============================================================ */
+
 .inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,7 +21,7 @@
   align-items: flex-start;
   gap: 1.25rem;
   padding: 1.5rem;
-  background: rgba(15,20,40,0.65);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
@@ -37,9 +41,9 @@
 }
 
 .pillar:hover {
-  border-color: rgba(249,115,22,0.3);
+  border-color: var(--border-orange);
   transform: translateX(4px);
-  box-shadow: 0 8px 24px rgba(3,6,17,0.5);
+  box-shadow: var(--shadow-base-sm);
 }
 
 .pillar:hover::before { opacity: 1; }
@@ -49,8 +53,8 @@
   font-weight: 700;
   font-family: var(--font-mono);
   color: var(--accent-orange);
-  background: rgba(249,115,22,0.1);
-  border: 1px solid rgba(249,115,22,0.25);
+  background: var(--bg-orange-soft);
+  border: 1px solid var(--border-orange-sm);
   border-radius: var(--radius-sm);
   padding: 0.25rem 0.5rem;
   flex-shrink: 0;
@@ -71,7 +75,7 @@
 }
 
 .quoteBlock {
-  background: rgba(15,20,40,0.65);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-left: 3px solid var(--accent-pink);
@@ -102,7 +106,7 @@
 }
 
 .approachItem {
-  background: rgba(15,20,40,0.65);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
@@ -111,7 +115,7 @@
 }
 
 .approachItem:hover {
-  border-color: rgba(129,140,248,0.3);
+  border-color: var(--border-violet);
   transform: translateY(-2px);
 }
 

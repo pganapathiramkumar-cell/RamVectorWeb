@@ -1,3 +1,7 @@
+/* ============================================================
+   NAVBAR — tokens from global.css :root
+   ============================================================ */
+
 /* ── Top contact bar ─────────────────────────────── */
 .topBar {
   position: fixed;
@@ -6,8 +10,8 @@
   right: 0;
   height: 36px;
   z-index: 1001;
-  background: rgba(5,8,22,0.96);
-  border-bottom: 1px solid rgba(99,102,241,0.15);
+  background: var(--bg-nav);
+  border-bottom: 1px solid var(--border-subtle);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
@@ -72,7 +76,7 @@
 
 .topIconLink:hover {
   color: var(--accent-orange);
-  background: rgba(249,115,22,0.1);
+  background: var(--bg-orange-soft);
 }
 
 /* ── Main nav ─────────────────────────────────────── */
@@ -91,11 +95,11 @@
 }
 
 .navScrolled {
-  background: rgba(5,8,22,0.9);
+  background: var(--bg-nav-blur);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom-color: rgba(99,102,241,0.15);
-  box-shadow: 0 1px 24px rgba(3,6,17,0.6);
+  border-bottom-color: var(--border-subtle-md);
+  box-shadow: var(--shadow-nav);
 }
 
 .inner {
@@ -119,7 +123,7 @@
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #f97316, #dc2626);
+  background: var(--grad-cta);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,12 +131,12 @@
   font-size: 0.72rem;
   color: white;
   flex-shrink: 0;
-  box-shadow: 0 0 16px rgba(249,115,22,0.4);
+  box-shadow: var(--shadow-orange-glow);
   transition: box-shadow var(--transition-base);
 }
 
 .logo:hover .logoMark {
-  box-shadow: 0 0 24px rgba(249,115,22,0.6);
+  box-shadow: var(--shadow-orange-glow-lg);
 }
 
 .logoText {
@@ -180,7 +184,7 @@
 
 .links a:hover {
   color: var(--text-primary);
-  background: rgba(99,102,241,0.12);
+  background: var(--bg-indigo-mid);
 }
 
 /* ── CTA ─────────────────────────────────────────── */
@@ -189,7 +193,7 @@
   align-items: center;
   gap: 0.4rem;
   padding: 0.5rem 1.1rem;
-  background: linear-gradient(135deg, #f97316, #dc2626);
+  background: var(--grad-cta);
   color: white;
   border-radius: var(--radius-md);
   font-size: 0.8rem;
@@ -197,11 +201,11 @@
   transition: all var(--transition-base);
   text-decoration: none;
   white-space: nowrap;
-  box-shadow: 0 4px 16px rgba(249,115,22,0.3);
+  box-shadow: var(--shadow-orange-sm);
 }
 
 .cta:hover {
-  box-shadow: 0 6px 24px rgba(249,115,22,0.55);
+  box-shadow: var(--shadow-orange-lg);
   transform: translateY(-1px) scale(1.02);
 }
 
@@ -230,13 +234,13 @@
   display: none;
   position: fixed;
   inset: 60px 0 0 0;
-  background: rgba(5,8,22,0.98);
+  background: var(--bg-overlay);
   backdrop-filter: blur(20px);
   padding: 1.5rem;
   flex-direction: column;
   gap: 0.5rem;
   z-index: 999;
-  border-top: 1px solid rgba(99,102,241,0.15);
+  border-top: 1px solid var(--border-indigo-faint);
   overflow-y: auto;
 }
 
@@ -253,7 +257,7 @@
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.mobileMenu > a:hover { color: var(--text-primary); background: rgba(99,102,241,0.1); }
+.mobileMenu > a:hover { color: var(--text-primary); background: var(--bg-indigo-soft); }
 
 .mobileContacts {
   display: flex;
@@ -277,19 +281,19 @@
   transition: color var(--transition-fast), background var(--transition-fast);
 }
 
-.mobileContact:hover { color: var(--accent-orange); background: rgba(249,115,22,0.08); }
+.mobileContact:hover { color: var(--accent-orange); background: var(--bg-orange-faint); }
 
 .mobileCta {
   margin-top: 0.5rem;
   padding: 0.9rem 1.25rem;
-  background: linear-gradient(135deg, #f97316, #dc2626);
+  background: var(--grad-cta);
   color: white;
   border-radius: var(--radius-md);
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   font-size: 0.9rem;
-  box-shadow: 0 4px 16px rgba(249,115,22,0.3);
+  box-shadow: var(--shadow-orange-sm);
 }
 
 /* ── Responsive ──────────────────────────────────── */

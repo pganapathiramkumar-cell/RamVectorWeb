@@ -1,3 +1,7 @@
+/* ============================================================
+   COMPETENCIES — tokens from global.css :root
+   ============================================================ */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -5,7 +9,7 @@
 }
 
 .card {
-  background: rgba(15,20,40,0.7);
+  background: var(--bg-glass);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
@@ -27,9 +31,9 @@
 }
 
 .card:hover {
-  border-color: rgba(249,115,22,0.3);
+  border-color: var(--border-orange);
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(3,6,17,0.7), 0 0 0 1px rgba(249,115,22,0.15);
+  box-shadow: var(--shadow-base-md), 0 0 0 1px var(--border-orange-faint);
 }
 
 .card:hover::before { opacity: 1; }

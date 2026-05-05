@@ -1,3 +1,7 @@
+/* ============================================================
+   PROJECTS — tokens from global.css :root
+   ============================================================ */
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5,7 +9,7 @@
 }
 
 .card {
-  background: rgba(15,20,40,0.7);
+  background: var(--bg-glass);
   backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
@@ -28,16 +32,16 @@
 }
 
 .card:hover {
-  border-color: rgba(249,115,22,0.3);
+  border-color: var(--border-orange);
   transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(3,6,17,0.75), 0 0 0 1px rgba(249,115,22,0.12);
+  box-shadow: var(--shadow-base-lg), 0 0 0 1px var(--bg-orange-trace);
 }
 
 .card:hover::before { opacity: 1; }
 
 .featured {
-  border-color: rgba(249,115,22,0.2);
-  background: linear-gradient(135deg, rgba(15,20,40,0.8) 70%, rgba(249,115,22,0.03));
+  border-color: var(--border-orange-faint);
+  background: linear-gradient(135deg, var(--bg-glass-strong) 70%, var(--bg-orange-trace));
 }
 
 .featured::after {
@@ -81,27 +85,27 @@
 }
 
 .badgeLive {
-  background: rgba(16,185,129,0.12);
-  color: #10b981;
-  border: 1px solid rgba(16,185,129,0.25);
+  background: var(--bg-emerald-soft);
+  color: var(--accent-emerald);
+  border: 1px solid var(--border-emerald-sm);
 }
 
 .badgeAI {
-  background: rgba(99,102,241,0.12);
+  background: var(--bg-indigo-mid);
   color: var(--accent-violet);
-  border: 1px solid rgba(99,102,241,0.25);
+  border: 1px solid var(--border-indigo-sm);
 }
 
 .badgeEnterprise {
-  background: rgba(249,115,22,0.12);
+  background: var(--bg-orange-mid);
   color: var(--accent-orange);
-  border: 1px solid rgba(249,115,22,0.25);
+  border: 1px solid var(--border-orange-sm);
 }
 
 .badgeCase {
-  background: rgba(236,72,153,0.12);
+  background: var(--bg-pink-soft);
   color: var(--accent-pink);
-  border: 1px solid rgba(236,72,153,0.25);
+  border: 1px solid var(--border-pink-sm);
 }
 
 .title {
@@ -126,7 +130,7 @@
   gap: 0.75rem;
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background: rgba(5,8,22,0.5);
+  background: var(--bg-deep-faint);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
 }
@@ -141,7 +145,7 @@
 .impactValue {
   font-size: 1.1rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #f97316, #ec4899);
+  background: var(--grad-creative);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -167,7 +171,7 @@
   font-weight: 500;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
-  background: rgba(5,8,22,0.6);
+  background: var(--bg-deep);
   border: 1px solid var(--border-subtle);
   color: var(--text-muted);
   font-family: var(--font-mono);
@@ -175,7 +179,7 @@
 }
 
 .stackTag:hover {
-  border-color: rgba(99,102,241,0.3);
+  border-color: var(--border-indigo);
   color: var(--accent-lavender);
 }
 
@@ -198,13 +202,13 @@
 }
 
 .actionBtnPrimary {
-  background: linear-gradient(135deg, #f97316, #dc2626);
+  background: var(--grad-cta);
   color: white;
-  box-shadow: 0 2px 12px rgba(249,115,22,0.3);
+  box-shadow: var(--shadow-orange-sm);
 }
 
 .actionBtnPrimary:hover {
-  box-shadow: 0 4px 20px rgba(249,115,22,0.5);
+  box-shadow: var(--shadow-orange-btn);
   transform: translateY(-1px) scale(1.02);
 }
 
@@ -216,8 +220,8 @@
 
 .actionBtnGhost:hover {
   color: var(--accent-lavender);
-  border-color: rgba(129,140,248,0.4);
-  background: rgba(99,102,241,0.08);
+  border-color: var(--border-violet-md);
+  background: var(--bg-indigo-faint);
 }
 
 @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }

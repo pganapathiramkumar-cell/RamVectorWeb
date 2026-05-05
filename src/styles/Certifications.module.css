@@ -1,3 +1,7 @@
+/* ============================================================
+   CERTIFICATIONS — tokens from global.css :root
+   ============================================================ */
+
 .wrapper {
   background: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
@@ -31,7 +35,7 @@
 .groupCount {
   font-size: 0.65rem;
   font-weight: 700;
-  background: rgba(15,20,40,0.8);
+  background: var(--bg-glass-strong);
   border: 1px solid var(--border-subtle);
   border-radius: 100px;
   padding: 0.1rem 0.45rem;
@@ -47,7 +51,7 @@
 }
 
 .certCard {
-  background: rgba(15,20,40,0.65);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
@@ -59,13 +63,13 @@
 }
 
 .certCard:hover {
-  border-color: rgba(249,115,22,0.3);
+  border-color: var(--border-orange);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(3,6,17,0.5);
+  box-shadow: var(--shadow-base-sm);
 }
 
 .certExpired { opacity: 0.6; }
-.certExpired:hover { opacity: 0.85; border-color: rgba(239,68,68,0.25); }
+.certExpired:hover { opacity: 0.85; border-color: var(--border-red); }
 
 .certIcon {
   width: 36px;

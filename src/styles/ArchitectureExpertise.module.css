@@ -1,3 +1,7 @@
+/* ============================================================
+   ARCHITECTURE EXPERTISE — tokens from global.css :root
+   ============================================================ */
+
 .wrapper {
   background: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
@@ -12,7 +16,7 @@
 }
 
 .frameworkCard {
-  background: rgba(15,20,40,0.65);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
@@ -33,9 +37,9 @@
 }
 
 .frameworkCard:hover {
-  border-color: rgba(129,140,248,0.3);
+  border-color: var(--border-violet);
   transform: translateY(-2px);
-  box-shadow: 0 12px 36px rgba(3,6,17,0.6);
+  box-shadow: var(--shadow-base-md);
 }
 
 .frameworkCard:hover::before { opacity: 1; }
@@ -89,7 +93,7 @@
 }
 
 .governanceRow {
-  background: rgba(15,20,40,0.65);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);

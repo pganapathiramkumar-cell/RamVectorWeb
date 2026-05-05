@@ -1,3 +1,7 @@
+/* ============================================================
+   WORK EXPERIENCE — tokens from global.css :root
+   ============================================================ */
+
 .entries {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,7 @@
 }
 
 .card {
-  background: rgba(15,20,40,0.65);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-left: 3px solid var(--accent-indigo);
@@ -28,7 +32,7 @@
 
 .card:hover {
   transform: translateX(4px);
-  box-shadow: 0 8px 32px rgba(3,6,17,0.6);
+  box-shadow: var(--shadow-base-md);
   border-left-color: var(--accent-orange);
 }
 
@@ -58,9 +62,9 @@
   font-weight: 700;
   padding: 0.2rem 0.55rem;
   border-radius: 100px;
-  background: rgba(16,185,129,0.12);
+  background: var(--bg-emerald-soft);
   color: var(--accent-emerald);
-  border: 1px solid rgba(16,185,129,0.25);
+  border: 1px solid var(--border-emerald-sm);
   letter-spacing: 0.05em;
 }
 
@@ -117,7 +121,7 @@
 }
 
 .earlyRoles {
-  background: rgba(5,8,22,0.5);
+  background: var(--bg-deep-faint);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 1.25rem 1.75rem;

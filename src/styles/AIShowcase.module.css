@@ -1,5 +1,9 @@
+/* ============================================================
+   AI SHOWCASE — tokens from global.css :root
+   ============================================================ */
+
 .pipeline {
-  background: rgba(15,20,40,0.7);
+  background: var(--bg-glass);
   backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
@@ -14,7 +18,7 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 2px;
-  background: linear-gradient(90deg, #6366f1, #ec4899, #f97316);
+  background: var(--grad-top-bar);
 }
 
 .pipelineTitle {
@@ -54,7 +58,7 @@
 }
 
 .flowBox {
-  background: rgba(5,8,22,0.6);
+  background: var(--bg-deep);
   border: 1px solid var(--border-default);
   border-radius: var(--radius-md);
   padding: 0.85rem 1.1rem;
@@ -64,9 +68,9 @@
 }
 
 .flowBox:hover {
-  border-color: rgba(129,140,248,0.4);
+  border-color: var(--border-violet-md);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(3,6,17,0.5);
+  box-shadow: var(--shadow-base-sm);
 }
 
 .flowIcon {
@@ -107,7 +111,7 @@
 }
 
 .agentCard {
-  background: rgba(15,20,40,0.65);
+  background: var(--bg-glass-subtle);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
@@ -128,9 +132,9 @@
 }
 
 .agentCard:hover {
-  border-color: rgba(129,140,248,0.3);
+  border-color: var(--border-violet);
   transform: translateY(-3px);
-  box-shadow: 0 12px 36px rgba(3,6,17,0.6), var(--shadow-purple);
+  box-shadow: var(--shadow-base-md), var(--shadow-purple);
 }
 
 .agentCard:hover::before { opacity: 0.6; }
@@ -173,13 +177,13 @@
   border-radius: 100px;
   border: 1px solid var(--border-subtle);
   color: var(--text-muted);
-  background: rgba(5,8,22,0.5);
+  background: var(--bg-deep-faint);
   font-family: var(--font-mono);
   transition: border-color var(--transition-fast), color var(--transition-fast);
 }
 
 .agentTag:hover {
-  border-color: rgba(99,102,241,0.3);
+  border-color: var(--border-indigo);
   color: var(--accent-lavender);
 }
 
