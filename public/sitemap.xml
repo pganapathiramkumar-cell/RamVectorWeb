@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://ramvectorweb.vercel.app/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ramvectorweb.vercel.app/profile.png</image:loc>
+      <image:title>Ganapathi Ramkumar Palanivelu — AI Architect and Enterprise Architect</image:title>
+      <image:caption>Professional profile of Ganapathi Ramkumar Palanivelu, Senior AI Architect specializing in RAG pipelines, multi-agent AI, and enterprise cloud architecture.</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
