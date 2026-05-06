@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const SITE_URL  = 'https://ramvectorweb.vercel.app';
+const SITE_URL  = 'https://ramvector.com';
 const FULL_NAME = 'Ganapathi Ramkumar Palanivelu';
 const IMAGE_URL = `${SITE_URL}/profile.png`;
 
@@ -55,7 +55,7 @@ const personSchema = {
     'https://github.com/pganapathiramkumar-cell/RamVectorWeb',
     'https://apps.apple.com/in/app/ramvector/id6763949988',
     'https://orcid.org/0009-0006-9439-5067',
-    'https://www.ramkumar.cloud',
+    'https://www.ramvector.com',
   ],
 };
 
@@ -97,7 +97,7 @@ const productSchema = {
     'FastAPI backend with PostgreSQL and Redis',
   ],
   keywords:
-    'AI document intelligence, PDF analysis, RAG pipeline, LLM, enterprise AI, document summarization',
+    'RamVector, RamVector AI, RamVector app, RamVector PDF summarizer, RamVector document AI, RamVector RAG platform, RamVector AI tool, RamVector document analysis tool, RamVector AI document insights, RamVector RAG application, RamVector knowledge retrieval AI, RamVector semantic search platform, RamVector by Ram, Ramkumar, Ganapathi Ramkumar, Ganapathi Ramkumar Palanivelu, AI document intelligence, PDF analysis, RAG pipeline, LLM, enterprise AI, document summarization',
 };
 
 const websiteSchema = {
@@ -141,7 +141,7 @@ export default function SEOHead({
       <link rel="canonical" href={canonical} />
 
       {/* ── Keywords ───────────────────────────────────── */}
-      <meta name="keywords" content="Ganapathi Ramkumar Palanivelu, Ramkumar Palanivelu, RamVector, AI Architect, Enterprise Architect, Principal Architect, GenAI Architect, RAG Pipeline Architect, Retrieval Augmented Generation, Multi-Agent AI, LLM Architect, TOGAF, Zachman Framework, Multi-Cloud Architect, Azure Architect, AWS Architect, Azure OpenAI, AWS Bedrock, LangChain, LangGraph, CrewAI, Vector Database, Pinecone, pgvector, AI Document Intelligence, PDF Analysis AI, iOS AI App, RamVector App" />
+      <meta name="keywords" content="RamVector, RamVector AI, RamVector app, RamVector PDF summarizer, RamVector document AI, RamVector RAG platform, RamVector AI tool, RamVector AI PDF summarizer, RamVector document analysis tool, RamVector AI document insights, RamVector RAG application, RamVector knowledge retrieval AI, RamVector semantic search platform, RamVector global AI app, RamVector AI available worldwide, RamVector international AI platform, RamVector AI SaaS tool global, RamVector multi country AI app, RamVector by Ram, RamVector Ramkumar, Ramkumar RamVector, Ganapathi Ramkumar RamVector, RamVector Founder Ramkumar, Ramkumar AI RamVector, RamVector Ramkumar cloud, Ram, Ramkumar, Ganapathi Ramkumar, Ramkumar Palanivelu, Ganapathi Ramkumar Palanivelu, Palanivel Ramkumar AI, Ramkumar Developer, Ramkumar Cloud Engineer, Ramkumar AI Architect, Ganapathi Ramkumar AI, Ramkumar Tech, Ramkumar cloud, Ramkumar cloud AI, Ramkumar AI platform, Ramkumar tech portfolio, Ram AI, Ram Cloud, Ram Tech, RK AI, GRP AI, AI Architect, Enterprise Architect, Principal Architect, GenAI Architect, RAG Pipeline Architect, Retrieval Augmented Generation, Multi-Agent AI, LLM Architect, TOGAF, Zachman Framework, Multi-Cloud Architect, Azure Architect, AWS Architect, Azure OpenAI, AWS Bedrock, LangChain, LangGraph, CrewAI, Vector Database, Pinecone, pgvector, AI Document Intelligence, PDF Analysis AI, iOS AI App" />
 
       {/* ── Open Graph ─────────────────────────────────── */}
       <meta property="og:title"       content={title} />

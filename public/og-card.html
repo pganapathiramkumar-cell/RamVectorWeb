@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      font-family: Inter, -apple-system, sans-serif;
+      background: #0d0d1a;
+    }
+
+    .card {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #0d0d1a 0%, #12122a 60%, #1a1030 100%);
+      overflow: hidden;
+    }
+
+    /* Background glow blobs */
+    .blob-orange {
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(249,115,22,0.18) 0%, transparent 70%);
+      top: -80px;
+      left: -80px;
+      pointer-events: none;
+    }
+    .blob-indigo {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
+      bottom: -60px;
+      right: 380px;
+      pointer-events: none;
+    }
+
+    /* Left content */
+    .left {
+      flex: 1;
+      padding: 60px 56px 60px 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+      z-index: 2;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 900;
+      color: white;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+
+    .domain {
+      font-size: 14px;
+      color: rgba(249,115,22,0.9);
+      font-weight: 500;
+      margin-left: 2px;
+    }
+
+    .name {
+      font-size: 46px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      color: #f97316;
+      margin-bottom: 28px;
+      letter-spacing: -0.2px;
+    }
+
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+
+    .pill {
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      background: rgba(99,102,241,0.15);
+      border: 1px solid rgba(99,102,241,0.3);
+      color: #a5b4fc;
+    }
+
+    .pill.orange {
+      background: rgba(249,115,22,0.12);
+      border-color: rgba(249,115,22,0.25);
+      color: #fb923c;
+    }
+
+    .stats {
+      display: flex;
+      gap: 36px;
+    }
+
+    .stat-value {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -1px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+      font-weight: 400;
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Divider */
+    .divider {
+      width: 1px;
+      height: 630px;
+      background: linear-gradient(to bottom, transparent 5%, rgba(255,255,255,0.07) 30%, rgba(255,255,255,0.07) 70%, transparent 95%);
+      flex-shrink: 0;
+      z-index: 2;
+    }
+
+    /* Right photo */
+    .right {
+      width: 420px;
+      height: 630px;
+      flex-shrink: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .right::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, #0d0d1a 0%, transparent 30%);
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .right::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(to bottom, rgba(13,13,26,0.6), transparent);
+      z-index: 3;
+    }
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      opacity: 0.92;
+    }
+
+    /* Orange accent line */
+    .accent-line {
+      position: absolute;
+      bottom: 0;
+      left: 72px;
+      width: 56px;
+      height: 3px;
+      background: #f97316;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="blob-orange"></div>
+    <div class="blob-indigo"></div>
+
+    <div class="left">
+      <div class="brand-row">
+        <div class="brand-icon">Rv</div>
+        <div>
+          <div class="brand-name">RamVector</div>
+          <div class="domain">ramvector.com</div>
+        </div>
+      </div>
+
+      <div class="name">Ganapathi<br>Ramkumar</div>
+      <div class="title">AI Architect &nbsp;·&nbsp; Enterprise Architect</div>
+
+      <div class="pills">
+        <span class="pill orange">GenAI &amp; RAG</span>
+        <span class="pill">Multi-Agent AI</span>
+        <span class="pill orange">TOGAF</span>
+        <span class="pill">Azure &amp; AWS</span>
+        <span class="pill">LLM Engineering</span>
+      </div>
+
+      <div class="stats">
+        <div>
+          <div class="stat-value">14+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div>
+          <div class="stat-value">1000+</div>
+          <div class="stat-label">Enterprise Users</div>
+        </div>
+        <div>
+          <div class="stat-value">AZ-305</div>
+          <div class="stat-label">Azure Expert</div>
+        </div>
+      </div>
+
+      <div class="accent-line"></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="right">
+      <img class="photo" src="/profile.png" alt="Ganapathi Ramkumar Palanivelu" />
+    </div>
+  </div>
+</body>
+</html>
