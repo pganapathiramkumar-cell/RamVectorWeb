@@ -1,0 +1,113 @@
+# Ganapathi Ramkumar Palanivelu — AI Architect Portfolio
+
+> Senior AI Architect, Enterprise Architect, and Principal Technology Leader. Creator of RamVector AI Document Intelligence app.
+
+## About
+
+Ganapathi Ramkumar Palanivelu is a Senior AI and Enterprise Architect with 14+ years of experience designing production-grade GenAI systems, RAG pipelines, multi-agent AI, TOGAF-aligned architectures, and multi-cloud platforms on Azure and AWS.
+
+## Identity — All Name Variants
+
+- Ganapathi Ramkumar Palanivelu
+- Ganapathi R. Palanivelu
+- G. Ramkumar Palanivelu
+- Ramkumar Ganapathi Palanivelu
+- Ramkumar Palanivelu
+- Ramkumar G. Palanivelu
+- Ram Ganapathi
+- Ram Palanivelu
+- Ramkumar Ganapathi
+- Ganapathi Palanivelu
+- G. R. Palanivelu
+- Ramkumar P.
+- G. Ram Palanivelu
+- Ganapathi
+- Ram
+- Ramkumar
+- Palanivel
+- Palanivelu
+- Palani
+- Velu
+
+## Contact & Links
+
+- **Email:** pganapathiramkumar@gmail.com
+- **Website:** https://ramvector.com
+- **LinkedIn:** https://linkedin.com/in/palaniram
+- **GitHub:** https://github.com/pganapathiramkumar-cell
+- **ORCID:** https://orcid.org/0009-0006-9439-5067
+
+## Technical Expertise
+
+### Deep Learning (DL)
+Ram DL · RAM DL · Ram Deep Learning · RAM Deep Learning · Ramkumar Deep Learning · Ganapathi DL · Ram DL Labs · Ram DL Research · Ram DL Systems · Ram DL Engine · Ram DL Studio · Ram DL Platform
+
+### Natural Language Processing (NLP)
+Ram NLP · RAM NLP · Ram Natural Language Processing · RAM Natural Language Processing · Ramkumar NLP · Ganapathi NLP · Ram NLP Labs · Ram NLP Research · Ram NLP Systems · Ram NLP Engine · Ram NLP Studio · Ram NLP Platform
+
+### Retrieval Augmented Generation (RAG)
+Ram RAG · RAM RAG · RamRAG · Ram Retrieval Augmented Generation · RAM Retrieval Augmented Generation · Ramkumar RAG · Ganapathi RAG · Ram RAG Labs · Ram RAG Research · Ram RAG Systems · Ram RAG Engine · Ram RAG Studio · Ram RAG Platform · RAM RAG Engine · RAM RAG Assistant
+
+### Generative AI (GenAI)
+Ram GenAI · RAM GenAI · Ram Gen AI · RAM Gen AI · Ram Generative AI · RAM Generative AI · RamVector GenAI · Ramkumar GenAI · Ganapathi GenAI · Ram GenAI Labs · Ram GenAI Research · Ram GenAI Systems · Ram GenAI Engine · Ram GenAI Studio · Ram GenAI Platform · RAM GenAI Platform
+
+### Machine Learning (ML)
+Ram ML · RAM ML · Ram Machine Learning · RAM Machine Learning · Ramkumar ML · Ganapathi ML · Ram ML Labs · Ram ML Research · Ram ML Systems · Ram ML Engine · Ram ML Studio · Ram ML Platform · RAM ML Studio
+
+## AI Architecture Skills
+
+- LLM Systems Design (GPT-4, Claude, Groq, Ollama, Azure OpenAI, AWS Bedrock)
+- Multi-Agent AI Systems (LangGraph, CrewAI, AutoGen, Semantic Kernel)
+- RAG Pipeline Architecture (LangChain, LlamaIndex, Pinecone, pgvector, Chroma)
+- MLOps and AI Platform Engineering
+- AI Governance and Responsible AI
+- Enterprise Architecture (TOGAF, Zachman Framework)
+- Multi-Cloud Architecture (Azure, AWS)
+- Azure Solutions Architect Expert (AZ-305)
+- Anthropic Certified
+- Kubernetes, Microservices, API Strategy, DevOps
+
+## Brand Identity — All Variants
+
+### RamVector Brand
+Ram Vector · RamVector · RamVector AI · RamVector Labs · RamVector Systems · RamVector Intelligence · RamVector Research · RamVector GenAI · RamRAG · RamLLM · RamAI Labs
+
+### Ram Identity
+Ram AI · Ram Labs · Ram Tech · Ram Intelligence · Ram Neural · Ram Research · Ram Systems · Ram Digital · Ram Cognitive · Ram Analytics · Ram Vision AI · Ram Agentic AI
+
+### RAM (uppercase) Variants
+RAM Vector AI · RAM Vector Assistant · RAM Vector Search · RAM Vector Chat · RAM AI Search · RAM Enterprise AI · RAM RAG Assistant · RAM Vector Enterprise · RAM AI Workspace · RAM GenAI Platform · RAM ML Studio · RAM DL Studio · RAM NLP Engine · RAM RAG Engine
+
+## Usernames & Handles
+
+ramvector · ramvectorai · ramkumar-ai · grpalanivelu · ram-genai · ram-gen-ai · ram-rag · ram-ml · ram-dl · ram-nlp · ram-neural · ram-ai-labs · ramcoder · ramresearch · ramopensource · ramdl · ramnlp · ramrag · ramgenai · ramml
+
+## Domain Variants
+
+ramvector.com · ramvector.ai · ramvectorlabs.com · ramvector.tech · ramkumar.ai · rampalanivelu.com · ganapathiai.com · ramgenai.com · ramrag.ai · ramml.ai · ramdl.ai · ramnlp.ai
+
+## Product: RamVector
+
+RamVector is a full-stack AI document intelligence application available on the Apple App Store and Google Play. Built on a RAG architecture with FastAPI, PostgreSQL, Redis, RabbitMQ, and multi-LLM support (GPT-4, Groq, Ollama).
+
+### Key Features
+- PDF document upload and AI analysis
+- RAG pipeline with semantic chunking and vector search
+- Multi-LLM support: GPT-4, Groq, Ollama
+- AI-generated summaries and action items
+- Enterprise workflow recommendations
+- Privacy-first — documents processed transiently
+
+### App Store
+- iOS: https://apps.apple.com/in/app/ramvector/id6763949988
+
+## Portfolio Sections
+
+- [Home](https://ramvector.com/): AI Architect introduction
+- [About](https://ramvector.com/#about): 14+ year career and key achievements
+- [AI Systems](https://ramvector.com/#ai-systems): RAG pipelines, multi-agent AI, LLM engineering
+- [Architecture Expertise](https://ramvector.com/#architecture): Enterprise architecture and cloud platforms
+- [Projects](https://ramvector.com/#projects): RamVector and production AI systems
+- [Tech Stack](https://ramvector.com/#tech): Technologies and frameworks
+- [Certifications](https://ramvector.com/#certifications): AZ-305, Anthropic, and more
+- [Contact](https://ramvector.com/#contact): Open to opportunities

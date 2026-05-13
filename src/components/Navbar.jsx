@@ -1,13 +1,21 @@
 import { useState, useEffect } from 'react';
 import { X, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import styles from '../styles/Navbar.module.css';
 
-const navLinks = [
-  { label: 'About',      href: '#about' },
-  { label: 'Expertise',  href: '#architecture' },
-  { label: 'AI Systems', href: '#ai-systems' },
-  { label: 'Projects',   href: '#projects' },
-  { label: 'Contact',    href: '#contact' },
+const portfolioLinks = [
+  { label: 'About',      href: '/#about' },
+  { label: 'Expertise',  href: '/#architecture' },
+  { label: 'AI Systems', href: '/#ai-systems' },
+  { label: 'Projects',   href: '/#projects' },
+  { label: 'Contact',    href: '/#contact' },
+];
+
+const contentLinks = [
+  { label: 'Blog',        to: '/blog' },
+  { label: 'Tutorials',   to: '/tutorials' },
+  { label: 'Comparisons', to: '/comparisons' },
+  { label: 'Docs',        to: '/docs' },
 ];
 
 export default function Navbar() {
@@ -24,20 +32,23 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ── Main navigation ── */}
       <nav className={`${styles.nav} ${scrolled ? styles.navScrolled : ''}`}>
         <div className={styles.inner}>
-          <a href="#home" className={styles.logo}>
+          <Link to="/" className={styles.logo}>
             <div className={styles.logoMark}>Ram</div>
             <div className={styles.logoText}>
               <span className={styles.logoName}>Ram</span>
               <span className={styles.logoRole}>AI · Enterprise Architect</span>
             </div>
-          </a>
+          </Link>
 
           <ul className={styles.links}>
-            {navLinks.map(l => (
+            {portfolioLinks.map(l => (
               <li key={l.label}><a href={l.href}>{l.label}</a></li>
+            ))}
+            <li className={styles.navDivider} aria-hidden="true" />
+            {contentLinks.map(l => (
+              <li key={l.label}><Link to={l.to}>{l.label}</Link></li>
             ))}
           </ul>
 
@@ -62,10 +73,13 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* ── Mobile menu ── */}
       <div className={`${styles.mobileMenu} ${open ? styles.open : ''}`}>
-        {navLinks.map(l => (
+        {portfolioLinks.map(l => (
           <a key={l.label} href={l.href} onClick={closeMenu}>{l.label}</a>
+        ))}
+        <div className={styles.mobileDivider} />
+        {contentLinks.map(l => (
+          <Link key={l.label} to={l.to} onClick={closeMenu}>{l.label}</Link>
         ))}
         <a
           href="https://apps.apple.com/in/app/ramvector/id6763949988"

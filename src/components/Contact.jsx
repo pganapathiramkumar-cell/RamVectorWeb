@@ -92,15 +92,6 @@ export default function Contact() {
             viewport={viewportOptions}
           >
             <div className={styles.cta}>
-              <h3 className={styles.ctaTitle}>
-                Looking for a <span>Principal Architect</span> who bridges AI and enterprise strategy?
-              </h3>
-              <p className={styles.ctaDesc}>
-                Available for senior individual contributor and leadership roles across AI architecture,
-                enterprise architecture, and cloud platform engineering. Azure Solutions Architect Expert
-                (AZ-305) · Anthropic Certified · TOGAF Aligned.
-              </p>
-
               <div className={styles.ctaRoles}>
                 {roles.map(r => (
                   <div key={r} className={styles.ctaRole}>

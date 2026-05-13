@@ -187,6 +187,21 @@
   background: var(--bg-indigo-mid);
 }
 
+.navDivider {
+  width: 1px;
+  height: 16px;
+  background: rgba(255,255,255,0.1);
+  margin: 0 0.25rem;
+  flex-shrink: 0;
+}
+
+.mobileDivider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.07);
+  margin: 0.25rem 0;
+}
+
 /* ── CTA ─────────────────────────────────────────── */
 .cta {
   display: inline-flex;
