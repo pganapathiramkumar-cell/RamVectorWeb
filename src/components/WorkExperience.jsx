@@ -3,11 +3,26 @@ import styles from '../styles/WorkExperience.module.css';
 
 const experiences = [
   {
-    company: 'Sonata Software',
-    role: 'Lead Digital Engineer — Solution Architect',
-    dates: 'Feb 2022 – Present',
-    location: 'Bangalore, India · Onsite: Belfast, UK',
+    company: 'Creative Synergies Group, Bangalore',
+    role: 'AI Architect',
+    dates: 'Sep 2026 – Present',
+    location: 'Bangalore, India',
     current: true,
+    color: '#6366f1',
+    bullets: [
+      'Spearheading AI transformation with the President, VP, AVP, GM and AGM across 5 business units — guiding 200+ engineers from manual effort to automation through a phased AI roadmap (Discover → Prioritise → MVP → Scale).',
+      'Reduced engineering effort from ~1 day to ~5 minutes by converting legacy VB / C# macros (including Siemens UG NX) into AI-driven automation across CAD/PLM platforms (Autodesk Inventor, Vault, Apprentice Server).',
+      'Designed a CAD → Drawing → FBOM traceability pipeline capturing part hierarchy, critical dimensions, tolerances, GD&T and material — with engineering-criticality scoring (P0–P3) and a Graph + RAG knowledge model for change-impact analysis and CAD ↔ BOM reconciliation.',
+      'Automated welding, hole fastening and interference validation using hybrid RAG, ML-derived deterministic rules, deep learning and NLP under an "AI recommends, rules validate, humans approve" model (supported by Process Simulate).',
+      'Established AI governance and security standards (Zero Trust, NIST AI RMF, ISO/IEC 42001) to scale AI safely across all business units.',
+    ],
+  },
+  {
+    company: 'Sonata Software, Bangalore · Onsite: Belfast, UK',
+    role: 'Lead Digital Engineer — Solution Architect',
+    dates: 'Feb 2022 – May 2026',
+    location: 'Bangalore, India · Onsite: Belfast, UK',
+    current: false,
     color: '#a855f7',
     bullets: [
       'Architected production GenAI platform using Claude Sonnet / Haiku (AWS Bedrock) and Azure OpenAI Service with a spec-driven delivery model — accelerating WinForms-to-React modernisation by 60% and impacting 1,000+ enterprise users at the Belfast client.',

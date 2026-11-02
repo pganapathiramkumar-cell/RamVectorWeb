@@ -25,7 +25,7 @@ const degrees = [
     degree: 'M.Tech, Data Science & Machine Learning',
     institution: 'PES University',
     year: '2026',
-    status: 'In Progress',
+    status: 'Completed',
     color: '#ec4899',
     iconBg: 'rgba(236,72,153,0.12)',
     barColor: 'linear-gradient(90deg, #ec4899, #db2777)',

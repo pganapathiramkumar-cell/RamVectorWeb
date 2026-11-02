@@ -9,6 +9,13 @@ import styles from '../styles/About.module.css';
 const highlights = [
   {
     icon: Cpu,
+    color: '#6366f1',
+    bg: 'rgba(99,102,241,0.12)',
+    title: 'Engineering & Manufacturing AI Automation',
+    text: 'Leading AI transformation across CAD/PLM platforms (Autodesk Inventor, Vault, Siemens NX) — reducing engineering effort from ~1 day to ~5 minutes and guiding 200+ engineers through a phased AI roadmap.',
+  },
+  {
+    icon: Cpu,
     color: '#a855f7',
     bg: 'rgba(147,51,234,0.12)',
     title: 'Production GenAI Platform Delivery',
@@ -22,18 +29,11 @@ const highlights = [
     text: 'Delivered greenfield and migration programmes across Azure and AWS — including GCP-to-Azure migration with Zero Trust IAM — at enterprise scale across UK, India, and Saudi Arabia.',
   },
   {
-    icon: Users,
-    color: '#ec4899',
-    bg: 'rgba(236,72,153,0.12)',
-    title: 'Cross-Functional Team Leadership',
-    text: 'Led 15-engineer cross-functional teams across UK and India, coordinating complex migrations with zero downtime and earning formal client appreciation from Infosys.',
-  },
-  {
     icon: Shield,
     color: '#ef4444',
     bg: 'rgba(239,68,68,0.12)',
     title: 'AI Governance & Responsible AI',
-    text: 'Established enterprise AI governance frameworks covering responsible-AI controls, model access policies, audit logging, and TOGAF / Zachman-aligned architecture review.',
+    text: 'Established enterprise AI governance frameworks (NIST AI RMF, ISO/IEC 42001, Zero Trust) covering responsible-AI controls, model access policies, audit logging, and TOGAF / Zachman-aligned architecture review.',
   },
 ];
 
@@ -63,7 +63,7 @@ export default function About() {
             <h2 className="section-title">Architecting <span>AI-Driven</span> Enterprise Transformation</h2>
 
             <div className={styles.taglineRow}>
-              {['Production GenAI Systems', 'RAG & Multi-LLM Architecture', 'Automation Modernisation', 'Multi-Cloud Platform'].map(tag => (
+              {['Production GenAI Systems', 'RAG & Multi-LLM Architecture', 'Engineering & Manufacturing AI', 'Multi-Cloud Platform'].map(tag => (
                 <span key={tag} className={styles.taglinePill}>{tag}</span>
               ))}
             </div>
@@ -71,9 +71,10 @@ export default function About() {
             <p className={styles.bio}>
               <strong>Ganapathi Ramkumar Palanivelu</strong> is an Enterprise AI Architect and Solution Architect
               with 14+ years designing and delivering scalable AI platforms, multi-cloud architectures, and
-              enterprise transformation programmes across Azure and AWS. He has architected production GenAI
-              systems using Claude (AWS Bedrock), Azure OpenAI Service, and GPT-4 — driving 60% delivery
-              acceleration across 1,000+ enterprise users.
+              enterprise transformation programmes. Currently leading AI-driven engineering automation across
+              CAD/PLM platforms (Autodesk Inventor, Vault, Siemens NX) with the President and senior leadership —
+              architecting production GenAI systems using Claude (AWS Bedrock), Azure OpenAI Service, and GPT-4,
+              driving 60% delivery acceleration across 1,000+ enterprise users.
             </p>
             <p className={styles.bio}>
               As the creator of <strong>RamVector</strong> — a full-stack RAG AI assistant platform with FastAPI,

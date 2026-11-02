@@ -1,8 +1,17 @@
-import { Brain, Cloud, Layers, Terminal, Shield, BarChart2, Workflow, Database } from 'lucide-react';
+import { Brain, Cloud, Layers, Terminal, Shield, BarChart2, Workflow, Database, Settings } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from '../styles/TechStack.module.css';
 
 const categories = [
+  {
+    icon: Settings,
+    iconBg: 'rgba(99,102,241,0.15)',
+    iconColor: '#6366f1',
+    name: 'CAD / PLM & Engineering AI',
+    sub: 'Manufacturing & Design Automation',
+    dotColor: '#6366f1',
+    items: ['Autodesk Inventor', 'Autodesk Vault', 'Apprentice Server (Python & APIs)', 'Siemens UG NX', 'Siemens Tecnomatix Process Simulate', 'FBOM / PLM / ERP / MES Integration', 'Knowledge Graphs & GraphRAG', 'GD&T-aware Extraction', 'Computer Vision / OCR for Drawings', 'ML-derived Deterministic Rules'],
+  },
   {
     icon: Brain,
     iconBg: 'rgba(147,51,234,0.15)',
