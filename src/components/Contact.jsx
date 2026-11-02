@@ -10,7 +10,6 @@ const contactLinks = [
   { icon: Globe,       iconBg: 'rgba(236,72,153,0.15)', iconColor: '#ec4899', label: 'Website',   value: 'www.ramvector.com',               href: 'https://www.ramvector.com' },
   { icon: Github,      iconBg: 'rgba(99,102,241,0.15)', iconColor: '#818cf8', label: 'GitHub',    value: 'pganapathiramkumar-cell',         href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb' },
   { icon: ExternalLink,iconBg: 'rgba(249,115,22,0.12)', iconColor: '#fb923c', label: 'ORCID',     value: '0009-0006-9439-5067',             href: 'https://orcid.org/0009-0006-9439-5067' },
-  { icon: ExternalLink,iconBg: 'rgba(220,38,38,0.12)',  iconColor: '#f87171', label: 'App Store', value: 'RamVector — AI Document Intelligence', href: 'https://apps.apple.com/in/app/ramvector/id6763949988' },
 ];
 
 const roles = [

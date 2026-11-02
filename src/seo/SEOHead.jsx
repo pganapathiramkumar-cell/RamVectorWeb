@@ -69,13 +69,12 @@ const personSchema = {
   brand: {
     '@type': 'Brand',
     name: 'RamVector',
-    url: 'https://apps.apple.com/in/app/ramvector/id6763949988',
-    description: 'AI-powered document intelligence iOS application',
+    url: SITE_URL,
+    description: 'AI-powered document intelligence platform',
   },
   sameAs: [
     'https://linkedin.com/in/palaniram',
     'https://github.com/pganapathiramkumar-cell/RamVectorWeb',
-    'https://apps.apple.com/in/app/ramvector/id6763949988',
     'https://orcid.org/0009-0006-9439-5067',
     'https://www.ramvector.com',
   ],
@@ -88,9 +87,9 @@ const productSchema = {
   alternateName: 'RamVector AI Document Intelligence',
   applicationCategory: 'BusinessApplication',
   applicationSubCategory: 'Artificial Intelligence',
-  operatingSystem: 'iOS 16+',
-  url: 'https://apps.apple.com/in/app/ramvector/id6763949988',
-  downloadUrl: 'https://apps.apple.com/in/app/ramvector/id6763949988',
+  operatingSystem: 'Web, iOS, Android',
+  url: SITE_URL,
+  downloadUrl: SITE_URL,
   description:
     'RamVector is an AI-powered document intelligence platform that enables users to upload PDFs and receive AI-generated summaries, action items, key insights, and workflow recommendations. Built on a full-stack RAG architecture with FastAPI, PostgreSQL, Redis, RabbitMQ, and multi-LLM support (OpenAI GPT-4, Groq, Ollama).',
   screenshot: IMAGE_URL,
@@ -144,7 +143,6 @@ const organizationSchema = {
   sameAs: [
     'https://linkedin.com/in/palaniram',
     'https://github.com/pganapathiramkumar-cell',
-    'https://apps.apple.com/in/app/ramvector/id6763949988',
   ],
 };
 
@@ -165,7 +163,7 @@ const faqSchema = {
       name: 'What is RamVector?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'RamVector is an AI-powered document intelligence mobile app built by Ganapathi Ramkumar Palanivelu. It allows users to upload PDFs and instantly receive AI-generated summaries, action items, insights, and workflow recommendations. Available on iOS via the Apple App Store.',
+        text: 'RamVector is an AI-powered document intelligence platform built by Ganapathi Ramkumar Palanivelu. It allows users to upload PDFs and instantly receive AI-generated summaries, action items, insights, and workflow recommendations. Built on a full-stack RAG architecture with FastAPI, PostgreSQL, Redis, RabbitMQ, and multi-LLM support.',
       },
     },
     {

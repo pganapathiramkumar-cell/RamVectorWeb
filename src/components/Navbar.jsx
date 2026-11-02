@@ -52,14 +52,6 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <a
-            href="https://apps.apple.com/in/app/ramvector/id6763949988"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.cta}
-          >
-            RamVector App <ExternalLink size={13} />
-          </a>
 
           <button
             className={styles.hamburger}
@@ -81,15 +73,6 @@ export default function Navbar() {
         {contentLinks.map(l => (
           <Link key={l.label} to={l.to} onClick={closeMenu}>{l.label}</Link>
         ))}
-        <a
-          href="https://apps.apple.com/in/app/ramvector/id6763949988"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.mobileCta}
-          onClick={closeMenu}
-        >
-          RamVector App ↗
-        </a>
       </div>
     </>
   );

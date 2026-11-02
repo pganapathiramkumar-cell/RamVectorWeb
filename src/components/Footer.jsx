@@ -18,13 +18,6 @@ export default function Footer() {
           <a href="#architecture">Architecture</a>
           <a href="#ai-systems">AI Systems</a>
           <a href="#projects">Projects</a>
-          <a
-            href="https://apps.apple.com/in/app/ramvector/id6763949988"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            RamVector App ↗
-          </a>
         </div>
 
         <div className={styles.right}>

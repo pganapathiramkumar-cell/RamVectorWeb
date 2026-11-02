@@ -44,7 +44,6 @@ const profile = [
   { icon: Globe,       label: 'www.ramvector.com',               href: 'https://www.ramvector.com',                             external: true },
   { icon: Github,      label: 'pganapathiramkumar-cell',         href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb', external: true },
   { icon: ExternalLink,label: 'ORCID — 0009-0006-9439-5067',    href: 'https://orcid.org/0009-0006-9439-5067',                  external: true },
-  { icon: ExternalLink,label: 'RamVector on App Store',          href: 'https://apps.apple.com/in/app/ramvector/id6763949988',  external: true },
 ];
 
 export default function About() {
@@ -78,8 +77,7 @@ export default function About() {
             </p>
             <p className={styles.bio}>
               As the creator of <strong>RamVector</strong> — a full-stack RAG AI assistant platform with FastAPI,
-              PostgreSQL, Redis, RabbitMQ, and multi-LLM support (OpenAI GPT-4, Groq, Ollama), now live on the
-              Apple App Store — he brings end-to-end expertise from LLM selection and retrieval architecture to
+              PostgreSQL, Redis, RabbitMQ, and multi-LLM support (OpenAI GPT-4, Groq, Ollama) — he brings end-to-end expertise from LLM selection and retrieval architecture to
               evaluation pipelines and responsible-AI controls. TOGAF / Zachman aligned, Azure Solutions Architect
               Expert (AZ-305) | Anthropic Certified, with cross-functional team leadership spanning 15 engineers
               across UK and India.
