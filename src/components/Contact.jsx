@@ -50,7 +50,7 @@ export default function Contact() {
 
             <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '0.5rem' }}>
               Whether you're evaluating architecture leadership for an AI transformation programme,
-              building a GenAI platform from the ground up, or seeking advisory expertise —
+              building a GenAI platform from the ground up, or seeking advisory expertise, 
               let's start a conversation.
             </p>
 

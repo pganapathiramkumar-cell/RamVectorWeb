@@ -9,8 +9,8 @@ const projects = [
     iconBg: 'rgba(147,51,234,0.15)',
     iconColor: '#a855f7',
     badges: [{ label: 'Live', cls: styles.badgeLive }, { label: 'AI', cls: styles.badgeAI }],
-    title: 'RamVector — Enterprise RAG AI Assistant Platform',
-    desc: 'Designed and deployed a full-stack RAG AI assistant — React front-end, Python FastAPI back-end. Architected a 7-service microservices system (API Gateway, Steer, Skill, Auth, AI Orchestrator, Document, Notification) on PostgreSQL 16, Redis 7, and RabbitMQ 3.13.',
+    title: 'RamVector, Enterprise RAG AI Assistant Platform',
+    desc: 'Designed and deployed a full-stack RAG AI assistant, React front-end, Python FastAPI back-end. Architected a 7-service microservices system (API Gateway, Steer, Skill, Auth, AI Orchestrator, Document, Notification) on PostgreSQL 16, Redis 7, and RabbitMQ 3.13.',
     impact: [
       { value: 'Live',  label: 'Production' },
       { value: '7',     label: 'Microservices' },
@@ -29,7 +29,7 @@ const projects = [
     iconColor: '#f97316',
     badges: [{ label: 'Published', cls: styles.badgeLive }, { label: 'AI Innovation', cls: styles.badgeAI }],
     title: 'Vision React Code Generation System',
-    desc: 'Architected a multi-modal GenAI platform converting UI images and PDF mockups into production-ready React / Angular code — reducing front-end development effort from ~2 weeks to 5–10 minutes (60–70% efficiency gain). Lowered delivery cost by ~40% through automation of manual front-end effort. Submitted for peer-reviewed publication on Zenodo and ORCID.',
+    desc: 'Architected a multi-modal GenAI platform converting UI images and PDF mockups into production-ready React / Angular code, reducing front-end development effort from ~2 weeks to 5–10 minutes (60–70% efficiency gain). Lowered delivery cost by ~40% through automation of manual front-end effort. Submitted for peer-reviewed publication on Zenodo and ORCID.',
     impact: [
       { value: '60–70%', label: 'Efficiency Gain' },
       { value: '~40%',   label: 'Cost Reduction' },
@@ -48,7 +48,7 @@ const projects = [
     iconColor: '#ef4444',
     badges: [{ label: 'Peer Reviewed', cls: styles.badgeLive }, { label: 'Research', cls: styles.badgeCase }],
     title: 'Automated ECG Classification System Using Deep Learning',
-    desc: 'Designed and implemented a deep learning system for automated ECG classification and cardiac abnormality detection. Applied CNN and hybrid deep learning architectures to classify multiple cardiac conditions from 12-lead ECG signals — peer-reviewed and published on Zenodo and indexed on ORCID.',
+    desc: 'Designed and implemented a deep learning system for automated ECG classification and cardiac abnormality detection. Applied CNN and hybrid deep learning architectures to classify multiple cardiac conditions from 12-lead ECG signals, peer-reviewed and published on Zenodo and indexed on ORCID.',
     impact: [
       { value: 'CNN',    label: 'Deep Learning Arch' },
       { value: '12-lead', label: 'ECG Signal Analysis' },
@@ -76,7 +76,7 @@ export default function Projects() {
           <span className="section-label">Projects & Case Studies</span>
           <h2 className="section-title">Architecture in <span>Production</span></h2>
           <p className="section-sub">
-            From iOS applications to enterprise-scale AI platforms — every project delivers measurable
+            From iOS applications to enterprise-scale AI platforms, every project delivers measurable
             outcomes, not just technical deliverables.
           </p>
         </motion.div>

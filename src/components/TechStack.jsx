@@ -96,7 +96,7 @@ export default function TechStack() {
           <span className="section-label">Technology Stack</span>
           <h2 className="section-title">Tools of an <span>Enterprise Architect</span></h2>
           <p className="section-sub">
-            Platform-agnostic, framework-fluent — choosing the right tool for the context,
+            Platform-agnostic, framework-fluent, choosing the right tool for the context,
             not defaulting to the familiar.
           </p>
         </div>

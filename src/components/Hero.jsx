@@ -34,7 +34,7 @@ export default function Hero() {
             </motion.div>
 
             <motion.p className={styles.statement} variants={heroItem}>
-              Engineering the <strong>intelligence layer of the enterprise</strong> — from RAG pipelines
+              Engineering the <strong>intelligence layer of the enterprise</strong>, from RAG pipelines
               and multi-agent systems to TOGAF-aligned cloud architectures that
               convert AI investments into measurable business value.
             </motion.p>
@@ -65,7 +65,7 @@ export default function Hero() {
               <div className={styles.profilePhotoRing}>
                 <img
                   src="/profile.png"
-                  alt="Ganapathi Ramkumar Palanivelu — AI Architect, Enterprise Architect"
+                  alt="Ganapathi Ramkumar Palanivelu, AI Architect, Enterprise Architect"
                   className={styles.profileImg}
                   loading="eager"
                   width="300"

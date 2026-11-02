@@ -6,22 +6,22 @@ const pillars = [
   {
     num: '01',
     title: 'Architecture as Strategy',
-    desc: 'Technology decisions are business decisions. Every architecture choice is framed in terms of capability, risk, cost, and time-to-value — not technical preference.',
+    desc: 'Technology decisions are business decisions. Every architecture choice is framed in terms of capability, risk, cost, and time-to-value, not technical preference.',
   },
   {
     num: '02',
     title: 'Communication at Every Altitude',
-    desc: 'From engineering sprint reviews to board-level technology strategy sessions — adapting the message and medium to the audience without losing technical fidelity.',
+    desc: 'From engineering sprint reviews to board-level technology strategy sessions, adapting the message and medium to the audience without losing technical fidelity.',
   },
   {
     num: '03',
     title: 'Build for Change, Not Forever',
-    desc: 'Enterprise systems outlive their original requirements. Architecture must be designed for evolvability — modular, observable, and decoupled from any single technology bet.',
+    desc: 'Enterprise systems outlive their original requirements. Architecture must be designed for evolvability, modular, observable, and decoupled from any single technology bet.',
   },
   {
     num: '04',
     title: 'Cross-Functional Ownership',
-    desc: 'Architecture succeeds when it is owned by the teams that build it. Leads through enablement, documentation, and coaching — not gatekeeping.',
+    desc: 'Architecture succeeds when it is owned by the teams that build it. Leads through enablement, documentation, and coaching, not gatekeeping.',
   },
 ];
 
@@ -45,14 +45,14 @@ const approach = [
     iconBg: 'rgba(236,72,153,0.12)',
     iconColor: '#ec4899',
     title: 'Time-to-Market Focus',
-    desc: 'Architects for delivery velocity — phased roadmaps, quick wins, and sustainable scale.',
+    desc: 'Architects for delivery velocity, phased roadmaps, quick wins, and sustainable scale.',
   },
   {
     icon: Handshake,
     iconBg: 'rgba(220,38,38,0.12)',
     iconColor: '#ef4444',
     title: 'Vendor-Neutral',
-    desc: 'Platform-agnostic advisory — choosing capabilities over brand, and build vs. buy rigorously.',
+    desc: 'Platform-agnostic advisory, choosing capabilities over brand, and build vs. buy rigorously.',
   },
   {
     icon: TrendingUp,
@@ -103,11 +103,11 @@ export default function Leadership() {
           <div className={styles.right}>
             <div className={`${styles.quoteBlock} fade-up`}>
               <p className={styles.quote}>
-                "The role of an enterprise architect is not to control technology decisions —
+                "The role of an enterprise architect is not to control technology decisions, 
                 it is to create the conditions where the right decisions can be made quickly,
                 consistently, and in alignment with where the business is going."
               </p>
-              <span className={styles.quoteAuthor}>— Ganapathi Ramkumar Palanivelu · Architecture Philosophy</span>
+              <span className={styles.quoteAuthor}>- Ganapathi Ramkumar Palanivelu · Architecture Philosophy</span>
             </div>
 
             <div className={styles.approach}>

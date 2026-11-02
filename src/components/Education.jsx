@@ -51,7 +51,7 @@ export default function Education() {
           <span className="section-label">Education</span>
           <h2 className="section-title">Academic <span>Foundations</span></h2>
           <p className="section-sub">
-            Combining business leadership, data science, and technology engineering — from B.Tech to DBA.
+            Combining business leadership, data science, and technology engineering, from B.Tech to DBA.
           </p>
         </div>
 

@@ -62,7 +62,7 @@ const agentCards = [
     iconBg: 'rgba(239,68,68,0.12)',
     iconColor: '#ef4444',
     title: 'AI Governance & Safety',
-    desc: 'Implements responsible AI guardrails — content filtering, bias detection, PII redaction, audit logging, and regulatory compliance controls.',
+    desc: 'Implements responsible AI guardrails, content filtering, bias detection, PII redaction, audit logging, and regulatory compliance controls.',
     tags: ['Responsible AI', 'Guardrails', 'DPIA', 'Zero Trust'],
   },
 ];
@@ -80,7 +80,7 @@ export default function AIShowcase() {
           <span className="section-label">AI & GenAI Systems</span>
           <h2 className="section-title">Production-Grade <span>AI Architecture</span></h2>
           <p className="section-sub">
-            Designing AI systems that survive contact with the enterprise — robust, observable,
+            Designing AI systems that survive contact with the enterprise, robust, observable,
             governed, and aligned to real business outcomes.
           </p>
         </motion.div>

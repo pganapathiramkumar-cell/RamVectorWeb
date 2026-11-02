@@ -40,7 +40,7 @@ const personSchema = {
   image: {
     '@type': 'ImageObject',
     url: IMAGE_URL,
-    caption: `${FULL_NAME} — AI Architect and Enterprise Architect`,
+    caption: `${FULL_NAME}, AI Architect and Enterprise Architect`,
     description:
       'Professional headshot of Ganapathi Ramkumar Palanivelu, Senior AI Architect and Enterprise Architect specializing in GenAI, RAG pipelines, and multi-cloud transformation.',
   },
@@ -124,10 +124,10 @@ const productSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: `${FULL_NAME} — AI Architect Portfolio`,
+  name: `${FULL_NAME}, AI Architect Portfolio`,
   url: SITE_URL,
   description:
-    'Portfolio of Ganapathi Ramkumar Palanivelu — Senior AI Architect, Enterprise Architect, and Principal Technology Leader specializing in GenAI, RAG, TOGAF, and multi-cloud.',
+    'Portfolio of Ganapathi Ramkumar Palanivelu, Senior AI Architect, Enterprise Architect, and Principal Technology Leader specializing in GenAI, RAG, TOGAF, and multi-cloud.',
   author: { '@type': 'Person', name: FULL_NAME },
 };
 
@@ -210,7 +210,7 @@ const breadcrumbSchema = {
 /* ── Component ───────────────────────────────────────────────────── */
 
 export default function SEOHead({
-  title       = `${FULL_NAME} — AI Architect | Enterprise Architect | RamVector`,
+  title       = `${FULL_NAME}, AI Architect | Enterprise Architect | RamVector`,
   description = `Senior AI and Enterprise Architect with 14+ years designing production GenAI systems, RAG pipelines, multi-agent AI, TOGAF-aligned architectures, and multi-cloud platforms on Azure and AWS. Creator of RamVector AI Document Intelligence app.`,
   canonical   = SITE_URL,
   ogImage     = IMAGE_URL,
@@ -234,10 +234,10 @@ export default function SEOHead({
       <meta property="og:type"        content="website" />
       <meta property="og:url"         content={canonical} />
       <meta property="og:image"       content={ogImage} />
-      <meta property="og:image:alt"   content={`${FULL_NAME} — AI Architect and Enterprise Architect, Creator of RamVector`} />
+      <meta property="og:image:alt"   content={`${FULL_NAME}, AI Architect and Enterprise Architect, Creator of RamVector`} />
       <meta property="og:image:width"  content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:site_name"   content="RamVector — Ganapathi Ramkumar Palanivelu" />
+      <meta property="og:site_name"   content="RamVector, Ganapathi Ramkumar Palanivelu" />
       <meta property="og:locale"      content="en_IN" />
 
       {/* ── Twitter Card ───────────────────────────────── */}
@@ -245,7 +245,7 @@ export default function SEOHead({
       <meta name="twitter:title"       content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image"       content={ogImage} />
-      <meta name="twitter:image:alt"   content={`${FULL_NAME} — AI Architect`} />
+      <meta name="twitter:image:alt"   content={`${FULL_NAME}, AI Architect`} />
 
       {/* ── Image SEO ──────────────────────────────────── */}
       <meta itemProp="image" content={ogImage} />

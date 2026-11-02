@@ -10,26 +10,26 @@ const experiences = [
     current: true,
     color: '#6366f1',
     bullets: [
-      'Spearheading AI transformation with the President, VP, AVP, GM and AGM across 5 business units — guiding 200+ engineers from manual effort to automation through a phased AI roadmap (Discover → Prioritise → MVP → Scale).',
+      'Spearheading AI transformation with the President, VP, AVP, GM and AGM across 5 business units, guiding 200+ engineers from manual effort to automation through a phased AI roadmap (Discover → Prioritise → MVP → Scale).',
       'Reduced engineering effort from ~1 day to ~5 minutes by converting legacy VB / C# macros (including Siemens UG NX) into AI-driven automation across CAD/PLM platforms (Autodesk Inventor, Vault, Apprentice Server).',
-      'Designed a CAD → Drawing → FBOM traceability pipeline capturing part hierarchy, critical dimensions, tolerances, GD&T and material — with engineering-criticality scoring (P0–P3) and a Graph + RAG knowledge model for change-impact analysis and CAD ↔ BOM reconciliation.',
+      'Designed a CAD → Drawing → FBOM traceability pipeline capturing part hierarchy, critical dimensions, tolerances, GD&T and material, with engineering-criticality scoring (P0–P3) and a Graph + RAG knowledge model for change-impact analysis and CAD ↔ BOM reconciliation.',
       'Automated welding, hole fastening and interference validation using hybrid RAG, ML-derived deterministic rules, deep learning and NLP under an "AI recommends, rules validate, humans approve" model (supported by Process Simulate).',
       'Established AI governance and security standards (Zero Trust, NIST AI RMF, ISO/IEC 42001) to scale AI safely across all business units.',
     ],
   },
   {
     company: 'Sonata Software, Bangalore · Onsite: Belfast, UK',
-    role: 'Lead Digital Engineer — Solution Architect',
+    role: 'Lead Digital Engineer, Solution Architect',
     dates: 'Feb 2022 – May 2026',
     location: 'Bangalore, India · Onsite: Belfast, UK',
     current: false,
     color: '#a855f7',
     bullets: [
-      'Architected production GenAI platform using Claude Sonnet / Haiku (AWS Bedrock) and Azure OpenAI Service with a spec-driven delivery model — accelerating WinForms-to-React modernisation by 60% and impacting 1,000+ enterprise users at the Belfast client.',
+      'Architected production GenAI platform using Claude Sonnet / Haiku (AWS Bedrock) and Azure OpenAI Service with a spec-driven delivery model, accelerating WinForms-to-React modernisation by 60% and impacting 1,000+ enterprise users at the Belfast client.',
       'Designed end-to-end RAG architecture for enterprise knowledge extraction: chunking strategy, vector store selection, retrieval evaluation pipeline, and hallucination-mitigation layer using pgvector and LangChain.',
-      'Established AI governance framework covering responsible-AI controls, model access policies, and audit logging — enabling compliant Azure OpenAI and AWS Bedrock deployment for a UK financial services client.',
+      'Established AI governance framework covering responsible-AI controls, model access policies, and audit logging, enabling compliant Azure OpenAI and AWS Bedrock deployment for a UK financial services client.',
       'Architected GenAI solution patterns including RAG, agentic workflows, and multi-model orchestration with cost, latency, and accuracy trade-off analysis to inform model and pattern selection.',
-      'Led pre-sales architecture for AI-led modernisation engagements — producing solution blueprints, ROI models, and effort estimates that secured enterprise GenAI deals.',
+      'Led pre-sales architecture for AI-led modernisation engagements, producing solution blueprints, ROI models, and effort estimates that secured enterprise GenAI deals.',
       'Led 1,000+ Windows Server migration (2012 → 2019) with zero downtime, authored HLD / LLD, coordinated 15-engineer cross-functional team; received formal client appreciation from Infosys.',
       'Modernised CI/CD from TeamCity to GitHub Actions; orchestrated GCP-to-Azure migration with Zero Trust IAM and Azure Key Vault integration.',
     ],
@@ -53,7 +53,7 @@ const experiences = [
     current: false,
     color: '#ec4899',
     bullets: [
-      'Delivered full-cycle ERP implementation (Trio ERP) — requirement gathering, solution design, integration, and production go-live — managing direct C-suite stakeholder engagement across Saudi Arabia operations.',
+      'Delivered full-cycle ERP implementation (Trio ERP), requirement gathering, solution design, integration, and production go-live, managing direct C-suite stakeholder engagement across Saudi Arabia operations.',
     ],
   },
   {
@@ -79,7 +79,7 @@ export default function WorkExperience() {
           <span className="section-label">Work Experience</span>
           <h2 className="section-title">14+ Years of <span>Enterprise Delivery</span></h2>
           <p className="section-sub">
-            From RPA and ERP to production GenAI platforms — a consistent track record of designing
+            From RPA and ERP to production GenAI platforms, a consistent track record of designing
             and delivering complex systems at enterprise scale across UK, India, and Saudi Arabia.
           </p>
         </div>

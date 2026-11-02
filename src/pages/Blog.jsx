@@ -30,10 +30,10 @@ export function BlogList() {
   return (
     <>
       <Helmet>
-        <title>AI Architecture Blog — Ganapathi Ramkumar Palanivelu | RamVector</title>
+        <title>AI Architecture Blog by Ganapathi Ramkumar Palanivelu | RamVector</title>
         <meta name="description" content="Articles on RAG pipelines, Generative AI, multi-agent systems, enterprise architecture, and LLM engineering by Ganapathi Ramkumar Palanivelu." />
         <link rel="canonical" href={`${SITE_URL}/blog`} />
-        <meta property="og:title" content="AI Architecture Blog — Ganapathi Ramkumar Palanivelu" />
+        <meta property="og:title" content="AI Architecture Blog by Ganapathi Ramkumar Palanivelu" />
         <meta property="og:url" content={`${SITE_URL}/blog`} />
       </Helmet>
       <div className={styles.page}>
@@ -42,7 +42,7 @@ export function BlogList() {
             <Link to="/" className={styles.backLink}><ArrowLeft size={14} /> Back to Portfolio</Link>
             <span className={styles.sectionLabel}>Blog</span>
             <h1 className={styles.listTitle}>AI Architecture Insights</h1>
-            <p className={styles.listSub}>RAG pipelines, Generative AI, multi-agent systems, and enterprise architecture — by Ganapathi Ramkumar Palanivelu.</p>
+            <p className={styles.listSub}>Thought leadership on Generative AI, RAG pipelines, CAD/PLM AI automation, and enterprise architecture by <strong>Ganapathi Ramkumar Palanivelu</strong>, AI Architect at Creative Synergies Group.</p>
           </div>
         </div>
         <div className="container">
@@ -120,7 +120,7 @@ export function BlogPost() {
             <aside className={styles.sidebar}>
               <div className={styles.sidebarBox}>
                 <h3>About the Author</h3>
-                <p><strong>Ganapathi Ramkumar Palanivelu</strong> is a Senior AI Architect and Enterprise Architect specialising in RAG pipelines, Generative AI, multi-agent systems, and TOGAF-aligned enterprise architecture.</p>
+                <p><strong>Ganapathi Ramkumar Palanivelu</strong> is AI Architect at Creative Synergies Group, leading AI-driven engineering automation across CAD/PLM platforms. He writes about production GenAI systems, RAG architecture, and enterprise AI transformation.</p>
                 <a href="/#contact" className={styles.sidebarCta}>Get in Touch →</a>
               </div>
               <div className={styles.sidebarBox}>

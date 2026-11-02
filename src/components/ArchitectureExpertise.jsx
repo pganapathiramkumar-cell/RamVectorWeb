@@ -7,7 +7,7 @@ const frameworks = [
     badgeColor: '#a855f7',
     badgeBg: 'rgba(147,51,234,0.15)',
     title: 'TOGAF Enterprise Architecture',
-    desc: 'Applies TOGAF ADM phases end-to-end — from architecture vision and business architecture through to implementation governance and change management.',
+    desc: 'Applies TOGAF ADM phases end-to-end, from architecture vision and business architecture through to implementation governance and change management.',
     layers: [
       'Architecture Vision & Principles',
       'Business & Application Architecture',
@@ -21,7 +21,7 @@ const frameworks = [
     badgeColor: '#ec4899',
     badgeBg: 'rgba(236,72,153,0.15)',
     title: 'Zachman Framework Mapping',
-    desc: 'Uses the Zachman ontology to provide structured, multi-perspective views of enterprise systems — ensuring every stakeholder sees architecture at the right altitude.',
+    desc: 'Uses the Zachman ontology to provide structured, multi-perspective views of enterprise systems, ensuring every stakeholder sees architecture at the right altitude.',
     layers: [
       'Executive (Scope & Context)',
       'Business Mgmt (Business Concepts)',
@@ -35,7 +35,7 @@ const frameworks = [
     badgeColor: '#f97316',
     badgeBg: 'rgba(249,115,22,0.15)',
     title: 'HLD / LLD Architecture Design',
-    desc: 'Produces decision-ready architecture artefacts — from high-level conceptual diagrams for C-suite alignment to detailed technical specifications for engineering teams.',
+    desc: 'Produces decision-ready architecture artefacts, from high-level conceptual diagrams for C-suite alignment to detailed technical specifications for engineering teams.',
     layers: [
       'Context & Container Diagrams (C4)',
       'Sequence & State Diagrams',
@@ -47,7 +47,7 @@ const frameworks = [
 ];
 
 const governance = [
-  { label: 'ARB Participation', value: 'Architecture Review Board membership — evaluating solution proposals, standards compliance, and technical risk across programmes.' },
+  { label: 'ARB Participation', value: 'Architecture Review Board membership, evaluating solution proposals, standards compliance, and technical risk across programmes.' },
   { label: 'CoE Leadership',    value: 'Established and led AI and Cloud Centres of Excellence, driving standards adoption, reusable patterns, and engineering capability uplift.' },
   { label: 'Roadmap Ownership', value: '3-5 year technology roadmaps aligned to business strategy, investment cycles, and regulatory requirements.' },
   { label: 'Risk & Compliance', value: 'Architecture-level risk assessment, DPIA alignment, Zero Trust posture reviews, and regulatory compliance mapping.' },
@@ -63,7 +63,7 @@ export default function ArchitectureExpertise() {
           <span className="section-label">Architecture Expertise</span>
           <h2 className="section-title">Framework-Driven <span>Enterprise Design</span></h2>
           <p className="section-sub">
-            Architecture is not diagrams — it is structured decision-making. Every engagement is anchored
+            Architecture is not diagrams, it is structured decision-making. Every engagement is anchored
             to recognised frameworks, governed through formal review, and communicated at the right altitude.
           </p>
         </div>

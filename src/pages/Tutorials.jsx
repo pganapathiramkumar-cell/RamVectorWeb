@@ -31,10 +31,10 @@ export function TutorialList() {
   return (
     <>
       <Helmet>
-        <title>AI Tutorials — RAG, LangChain, LangGraph | Ganapathi Ramkumar Palanivelu</title>
-        <meta name="description" content="Step-by-step AI tutorials by Ganapathi Ramkumar Palanivelu — build RAG pipelines with LangChain and Pinecone, create multi-agent AI systems with LangGraph, and more." />
+        <title>AI Tutorials, RAG, LangChain, LangGraph | Ganapathi Ramkumar Palanivelu</title>
+        <meta name="description" content="Step-by-step AI tutorials by Ganapathi Ramkumar Palanivelu, build RAG pipelines with LangChain and Pinecone, create multi-agent AI systems with LangGraph, and more." />
         <link rel="canonical" href={`${SITE_URL}/tutorials`} />
-        <meta property="og:title" content="AI Tutorials — Ganapathi Ramkumar Palanivelu" />
+        <meta property="og:title" content="AI Tutorials, Ganapathi Ramkumar Palanivelu" />
         <meta property="og:url" content={`${SITE_URL}/tutorials`} />
       </Helmet>
       <div className={styles.page}>
@@ -43,7 +43,7 @@ export function TutorialList() {
             <Link to="/" className={styles.backLink}><ArrowLeft size={14} /> Back to Portfolio</Link>
             <span className={styles.sectionLabel}>Tutorials</span>
             <h1 className={styles.listTitle}>Hands-On AI Tutorials</h1>
-            <p className={styles.listSub}>Step-by-step guides for building production AI systems — RAG pipelines, multi-agent workflows, and enterprise AI architectures.</p>
+            <p className={styles.listSub}>Step-by-step guides for building production AI systems, RAG pipelines, multi-agent workflows, and enterprise AI architectures.</p>
           </div>
         </div>
         <div className="container">
@@ -117,7 +117,7 @@ export function TutorialPost() {
             <aside className={styles.sidebar}>
               <div className={styles.sidebarBox}>
                 <h3>About the Author</h3>
-                <p><strong>Ganapathi Ramkumar Palanivelu</strong> — Senior AI Architect, creator of RamVector, specialising in production RAG systems, multi-agent AI, and enterprise architecture.</p>
+                <p><strong>Ganapathi Ramkumar Palanivelu</strong>, Senior AI Architect, creator of RamVector, specialising in production RAG systems, multi-agent AI, and enterprise architecture.</p>
                 <a href="/#contact" className={styles.sidebarCta}>Get in Touch →</a>
               </div>
               <div className={styles.sidebarBox}>

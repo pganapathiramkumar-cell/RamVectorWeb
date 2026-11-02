@@ -12,21 +12,21 @@ const highlights = [
     color: '#6366f1',
     bg: 'rgba(99,102,241,0.12)',
     title: 'Engineering & Manufacturing AI Automation',
-    text: 'Leading AI transformation across CAD/PLM platforms (Autodesk Inventor, Vault, Siemens NX) — reducing engineering effort from ~1 day to ~5 minutes and guiding 200+ engineers through a phased AI roadmap.',
+    text: 'Leading AI transformation across CAD/PLM platforms (Autodesk Inventor, Vault, Siemens NX), reducing engineering effort from ~1 day to ~5 minutes and guiding 200+ engineers through a phased AI roadmap.',
   },
   {
     icon: Cpu,
     color: '#a855f7',
     bg: 'rgba(147,51,234,0.12)',
     title: 'Production GenAI Platform Delivery',
-    text: 'Architected Claude (Bedrock) + Azure OpenAI platforms achieving 60% delivery acceleration across 1,000+ enterprise users — with responsible-AI governance and full observability.',
+    text: 'Architected Claude (Bedrock) + Azure OpenAI platforms achieving 60% delivery acceleration across 1,000+ enterprise users, with responsible-AI governance and full observability.',
   },
   {
     icon: Globe,
     color: '#f97316',
     bg: 'rgba(249,115,22,0.12)',
     title: 'Multi-Cloud Platform Engineering',
-    text: 'Delivered greenfield and migration programmes across Azure and AWS — including GCP-to-Azure migration with Zero Trust IAM — at enterprise scale across UK, India, and Saudi Arabia.',
+    text: 'Delivered greenfield and migration programmes across Azure and AWS, including GCP-to-Azure migration with Zero Trust IAM, at enterprise scale across UK, India, and Saudi Arabia.',
   },
   {
     icon: Shield,
@@ -43,7 +43,7 @@ const profile = [
   { icon: Linkedin,    label: 'linkedin.com/in/palaniram',       href: 'https://linkedin.com/in/palaniram',                      external: true },
   { icon: Globe,       label: 'www.ramvector.com',               href: 'https://www.ramvector.com',                             external: true },
   { icon: Github,      label: 'pganapathiramkumar-cell',         href: 'https://github.com/pganapathiramkumar-cell/RamVectorWeb', external: true },
-  { icon: ExternalLink,label: 'ORCID — 0009-0006-9439-5067',    href: 'https://orcid.org/0009-0006-9439-5067',                  external: true },
+  { icon: ExternalLink,label: 'ORCID, 0009-0006-9439-5067',    href: 'https://orcid.org/0009-0006-9439-5067',                  external: true },
 ];
 
 export default function About() {
@@ -71,13 +71,13 @@ export default function About() {
               <strong>Ganapathi Ramkumar Palanivelu</strong> is an Enterprise AI Architect and Solution Architect
               with 14+ years designing and delivering scalable AI platforms, multi-cloud architectures, and
               enterprise transformation programmes. Currently leading AI-driven engineering automation across
-              CAD/PLM platforms (Autodesk Inventor, Vault, Siemens NX) with the President and senior leadership —
+              CAD/PLM platforms (Autodesk Inventor, Vault, Siemens NX) with the President and senior leadership, 
               architecting production GenAI systems using Claude (AWS Bedrock), Azure OpenAI Service, and GPT-4,
               driving 60% delivery acceleration across 1,000+ enterprise users.
             </p>
             <p className={styles.bio}>
-              As the creator of <strong>RamVector</strong> — a full-stack RAG AI assistant platform with FastAPI,
-              PostgreSQL, Redis, RabbitMQ, and multi-LLM support (OpenAI GPT-4, Groq, Ollama) — he brings end-to-end expertise from LLM selection and retrieval architecture to
+              As the creator of <strong>RamVector</strong>, a full-stack RAG AI assistant platform with FastAPI,
+              PostgreSQL, Redis, RabbitMQ, and multi-LLM support (OpenAI GPT-4, Groq, Ollama), he brings end-to-end expertise from LLM selection and retrieval architecture to
               evaluation pipelines and responsible-AI controls. TOGAF / Zachman aligned, Azure Solutions Architect
               Expert (AZ-305) | Anthropic Certified, with cross-functional team leadership spanning 15 engineers
               across UK and India.

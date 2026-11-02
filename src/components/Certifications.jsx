@@ -70,7 +70,7 @@ export default function Certifications() {
           <h2 className="section-title">Credentialed Across <span>AI, Cloud & Architecture</span></h2>
           <p className="section-sub">
             {TOTAL} industry certifications ({ACTIVE} active, {EXPIRED} previously held) spanning
-            enterprise cloud architecture, AI engineering, and cognitive project management —
+            enterprise cloud architecture, AI engineering, and cognitive project management, 
             issued by Microsoft, Anthropic, PMI, and LinkedIn.
           </p>
         </div>

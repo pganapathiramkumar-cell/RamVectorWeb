@@ -18,7 +18,7 @@ const Leadership            = lazy(() => import('./components/Leadership'));
 const Contact               = lazy(() => import('./components/Contact'));
 const Footer                = lazy(() => import('./components/Footer'));
 
-// Content pages — each export resolved individually at module level
+// Content pages, each export resolved individually at module level
 const BlogList       = lazy(() => import('./pages/Blog').then(m => ({ default: m.BlogList })));
 const BlogPost       = lazy(() => import('./pages/Blog').then(m => ({ default: m.BlogPost })));
 const TutorialList   = lazy(() => import('./pages/Tutorials').then(m => ({ default: m.TutorialList })));

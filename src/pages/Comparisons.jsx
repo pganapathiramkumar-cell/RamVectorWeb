@@ -30,10 +30,10 @@ export function ComparisonList() {
   return (
     <>
       <Helmet>
-        <title>AI Tool Comparisons — LangChain vs LlamaIndex, Pinecone vs pgvector | Ganapathi Ramkumar Palanivelu</title>
-        <meta name="description" content="In-depth AI tool comparisons by Ganapathi Ramkumar Palanivelu — LangChain vs LlamaIndex, Pinecone vs pgvector, and more enterprise AI framework comparisons." />
+        <title>AI Tool Comparisons, LangChain vs LlamaIndex, Pinecone vs pgvector | Ganapathi Ramkumar Palanivelu</title>
+        <meta name="description" content="In-depth AI tool comparisons by Ganapathi Ramkumar Palanivelu, LangChain vs LlamaIndex, Pinecone vs pgvector, and more enterprise AI framework comparisons." />
         <link rel="canonical" href={`${SITE_URL}/comparisons`} />
-        <meta property="og:title" content="AI Tool Comparisons — Ganapathi Ramkumar Palanivelu" />
+        <meta property="og:title" content="AI Tool Comparisons, Ganapathi Ramkumar Palanivelu" />
         <meta property="og:url" content={`${SITE_URL}/comparisons`} />
       </Helmet>
       <div className={styles.page}>
@@ -42,7 +42,7 @@ export function ComparisonList() {
             <Link to="/" className={styles.backLink}><ArrowLeft size={14} /> Back to Portfolio</Link>
             <span className={styles.sectionLabel}>Comparisons</span>
             <h1 className={styles.listTitle}>AI Framework Comparisons</h1>
-            <p className={styles.listSub}>Objective, in-depth comparisons of AI frameworks, vector databases, and tools — based on production experience.</p>
+            <p className={styles.listSub}>Objective, in-depth comparisons of AI frameworks, vector databases, and tools, based on production experience.</p>
           </div>
         </div>
         <div className="container">
@@ -117,7 +117,7 @@ export function ComparisonPost() {
             <aside className={styles.sidebar}>
               <div className={styles.sidebarBox}>
                 <h3>About the Author</h3>
-                <p><strong>Ganapathi Ramkumar Palanivelu</strong> — Senior AI Architect with production experience across LangChain, LlamaIndex, Pinecone, pgvector, and the full RAG/GenAI stack.</p>
+                <p><strong>Ganapathi Ramkumar Palanivelu</strong>, Senior AI Architect with production experience across LangChain, LlamaIndex, Pinecone, pgvector, and the full RAG/GenAI stack.</p>
                 <a href="/#contact" className={styles.sidebarCta}>Get in Touch →</a>
               </div>
               <div className={styles.sidebarBox}>

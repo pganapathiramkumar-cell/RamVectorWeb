@@ -30,10 +30,10 @@ export function DocList() {
   return (
     <>
       <Helmet>
-        <title>AI Architecture Documentation — RamVector | Ganapathi Ramkumar Palanivelu</title>
-        <meta name="description" content="Technical documentation and AI architecture references by Ganapathi Ramkumar Palanivelu — RamVector system architecture, AI glossary, and enterprise AI documentation." />
+        <title>AI Architecture Documentation, RamVector | Ganapathi Ramkumar Palanivelu</title>
+        <meta name="description" content="Technical documentation and AI architecture references by Ganapathi Ramkumar Palanivelu, RamVector system architecture, AI glossary, and enterprise AI documentation." />
         <link rel="canonical" href={`${SITE_URL}/docs`} />
-        <meta property="og:title" content="AI Architecture Documentation — RamVector" />
+        <meta property="og:title" content="AI Architecture Documentation, RamVector" />
         <meta property="og:url" content={`${SITE_URL}/docs`} />
       </Helmet>
       <div className={styles.page}>
@@ -118,7 +118,7 @@ export function DocPost() {
             <aside className={styles.sidebar}>
               <div className={styles.sidebarBox}>
                 <h3>About the Author</h3>
-                <p><strong>Ganapathi Ramkumar Palanivelu</strong> — Senior AI Architect and creator of RamVector AI Document Intelligence platform.</p>
+                <p><strong>Ganapathi Ramkumar Palanivelu</strong>, Senior AI Architect and creator of RamVector AI Document Intelligence platform.</p>
                 <a href="/#contact" className={styles.sidebarCta}>Get in Touch →</a>
               </div>
               <div className={styles.sidebarBox}>
